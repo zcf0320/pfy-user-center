@@ -1,0 +1,83 @@
+@import "~taro-ui/dist/style/components/calendar.scss";
+
+.at-calendar {
+  background-color: #fff;
+
+  .at-calendar__list.flex .flex__item--today {
+    font-weight: normal;
+    color: #ff775dff;
+  }
+
+  .at-calendar__controller .controller__arrow {
+    background-color: #fff;
+
+    &.controller__arrow--left {
+      background-image: url("#{$ossHost}/icon-last.png");
+      background-size: 32px 32px;
+      background-color: none;
+    }
+
+    &.controller__arrow--right {
+      background-image: url("#{$ossHost}/icon-last.png");
+      background-size: 32px 32px;
+      background-color: none;
+    }
+  }
+
+  .at-calendar__list.flex .flex__item--blur {
+    font-family: DINAlternate-Bold, DINAlternate;
+    // font-weight: bold;
+    color: #cccccc;
+    font-size: 24px;
+  }
+
+  .taro-picker .taro-text.controller__info {
+    display: block;
+    line-height: 72px;
+    height: 72px;
+  }
+
+  .taro-picker .controller__info {
+    font-size: 32px;
+
+    color: #333333;
+    // font-weight: 600;
+  }
+
+  .at-calendar__header .header__flex-item {
+    font-size: 24px;
+
+    color: #cccccc;
+  }
+
+  .at-calendar__list.flex {
+    font-family: DINAlternate-Bold, DINAlternate;
+    // font-weight: bold;
+    color: #333333ff;
+    font-size: 24px;
+
+    .container-text {
+      font-size: 24px;
+    }
+
+    .container-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 40px;
+    }
+
+    .flex__item.flex__item--selected-tail {
+      display: flex;
+      align-items: center;
+
+      .flex__item-container {
+        width: 40px;
+        height: 40px;
+        background-color: #ff775dff;
+        color: #ffffff;
+      }
+    }
+  }
+}

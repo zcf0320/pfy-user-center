@@ -1,0 +1,41 @@
+.component-clot {
+    width: 100%;
+    .select-list {
+        width: 100%;
+        .select-item {
+            width: 186px;
+            height: 60px;
+            border-radius: 8px;
+            border: 1px solid #cccccc;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 24px;
+            color: $color-333;
+            margin-left: 36px;
+            margin-top: 32px;
+            &.active {
+                border: 1px solid #ff775d;
+                color: #ff775d;
+            }
+            &:nth-child(1) {
+                margin-left: 0;
+            }
+        }
+    }
+    .save {
+        width: 440px;
+        height: 88px;
+        border-radius: 44px;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 32px;
+        color: $white;
+        background: linear-gradient(180deg, #e9e5e5 0%, #cccccc 100%);
+        box-shadow: 0px 6px 20px 0px rgba(204, 204, 204, 0.2);
+        margin: 48px auto 23px;
+        &.active {
+            background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+            box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+        }
+    }
+}

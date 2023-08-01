@@ -1,0 +1,87 @@
+@import "@styles/theme.scss";
+@import "../../../app.scss";
+.page-health-question {
+  width: 100%;
+
+  padding: 32px 32px 500px 32px;
+
+  background: #fbfbfb;
+  .user-answer {
+    width: 622px;
+    height: 640px;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #febd44;
+    resize: none;
+    padding: 26px 16px;
+    box-sizing: border-box;
+    line-height: 36px;
+    color: $color-333;
+    font-size: 28px;
+    margin: 32px auto;
+    outline: none;
+  }
+
+  .health-question {
+    width: 100%;
+    min-height: 500px;
+    box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+    border-radius: 12px;
+    .question-list {
+      width: 100%;
+
+      align-items: center;
+      flex-direction: column;
+    }
+    .question-name {
+      width: 100%;
+      font-size: 40px;
+      color: $color-333;
+      font-weight: bold;
+      padding: 64px 32px 48px;
+      line-height: 66px;
+      text-align: left;
+    }
+    .question-option {
+      width: 686px;
+      padding: 48px 32px;
+      font-size: 32px;
+      line-height: 1;
+      border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+      &.active {
+        background: rgba(255, 90, 71, 0.1);
+      }
+    }
+  }
+  .pre-next {
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 30px 0 30px;
+
+    .pre {
+      font-size: 32px;
+      line-height: 1;
+      color: $color-333;
+      margin-bottom: 48px;
+    }
+    .next {
+      width: 440px;
+      height: 88px;
+      background: linear-gradient(180deg, #e9e5e5 0%, #cccccc 100%);
+      box-shadow: 0px 6px 20px 0px rgba(204, 204, 204, 0.2);
+      border-radius: 44px;
+      align-items: center;
+      justify-content: space-around;
+      color: $white;
+      font-size: 32px;
+      &.active {
+        background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+        box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+      }
+    }
+  }
+}

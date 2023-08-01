@@ -1,0 +1,29 @@
+.claims-no-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &-img {
+    width: 522px;
+    height: 334px;
+    margin: 252px 0 48px;
+  }
+  &-text {
+    font-size: 28px;
+    color: #999999;
+  }
+  .go-btn {
+    width: 440px;
+    height: 88px;
+    background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+    box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+    border-radius: 44px;
+    font-size: 32px;
+
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 88px;
+    text-align: center;
+    margin-top: 300px;
+  }
+}

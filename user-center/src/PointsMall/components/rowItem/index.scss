@@ -1,0 +1,128 @@
+.lottery-item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 150px;
+  height: 160px;
+  .go {
+    width: 190px;
+    height: 180px;
+    display: block;
+  }
+  .actived {
+    width: 150px;
+    height: 160px;
+    display: block;
+  }
+  .shadow {
+    box-shadow: 3px 3px 10px 0 #490a9a;
+  }
+  .picAnd0-en {
+    width: 150px;
+    height: 160px;
+    background-image: url("#{$ossHost}lottery_default1_en.png");
+    background-size: 100% 100%;
+  }
+  .picAnd0 {
+    width: 150px;
+    height: 160px;
+    background-image: url("#{$ossHost}lottery_default1.png");
+    background-size: 100% 100%;
+  }
+  .actived-0 {
+    width: 150px;
+    height: 160px;
+    background-image: url("#{$ossHost}lottery_active1.png");
+    background-size: 100% 100%;
+  }
+  .actived-0-en {
+    width: 150px;
+    height: 160px;
+    background-image: url("#{$ossHost}lottery_active1_en.png");
+    background-size: 100% 100%;
+  }
+  .picAnd1 {
+    width: 150px;
+    height: 160px;
+    background-image: url("#{$ossHost}coin-7.png");
+    background-size: 100% 100%;
+  }
+  .actived-1 {
+    width: 150px;
+    height: 160px;
+    background-image: url("#{$ossHost}coin-7-active.png");
+    background-size: 100% 100%;
+  }
+  .picAnd2 {
+    width: 150px;
+    height: 160px;
+    background-image: url("#{$ossHost}coin-ai.png");
+    background-size: 100% 100%;
+  }
+  .actived-2 {
+    width: 150px;
+    height: 160px;
+    background-image: url("#{$ossHost}coin-ai-active.png");
+    background-size: 100% 100%;
+  }
+  .picAnd3 {
+    width: 150px;
+    height: 160px;
+    background-image: url("#{$ossHost}coin-100.png");
+    background-size: 100% 100%;
+  }
+  .actived-3 {
+    width: 150px;
+    height: 160px;
+    background-image: url("#{$ossHost}coin-100-active.png");
+    background-size: 100% 100%;
+  }
+  .picAnd4 {
+    width: 150px;
+    height: 160px;
+    background-image: url("#{$ossHost}lottery-questionnaire.png");
+    background-size: 100% 100%;
+  }
+  .actived-4 {
+    width: 150px;
+    height: 160px;
+    background-image: url("#{$ossHost}lottery-questionnaire-active.png");
+    background-size: 100% 100%;
+  }
+  .picAnd5 {
+    width: 150px;
+    height: 160px;
+    background-image: url("#{$ossHost}coin-10.png");
+    background-size: 100% 100%;
+  }
+  .actived-5 {
+    width: 150px;
+    height: 160px;
+    background-image: url("#{$ossHost}coin-10-active.png");
+    background-size: 100% 100%;
+  }
+  .picAnd6 {
+    width: 150px;
+    height: 160px;
+    background-image: url("#{$ossHost}coupon-1000.png");
+    background-size: 100% 100%;
+  }
+  .actived-6 {
+    width: 150px;
+    height: 160px;
+    background-image: url("#{$ossHost}coupon-1000-active.png");
+    background-size: 100% 100%;
+  }
+  .picAnd7 {
+    width: 150px;
+    height: 160px;
+    background-image: url("#{$ossHost}coin-20.png");
+    background-size: 100% 100%;
+  }
+  .actived-7 {
+    width: 150px;
+    height: 160px;
+    background-image: url("#{$ossHost}coin-20-active.png");
+    background-size: 100% 100%;
+  }
+}

@@ -1,0 +1,152 @@
+@import '@styles/theme.scss';
+.page-group-create{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background: #f6f6f6;
+    .content{
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        flex: 1;
+        overflow: scroll;
+        .product-insured{
+            width: 718px;
+            background: $page-bg;
+            border-radius:12px;
+            margin: 32px auto 32px;
+            .product-title{
+                height: 96px;
+                font-size: 32px;
+                font-weight: bold;
+                color: $color-333;
+                align-items: center;
+                background: #FFFFFF;
+                padding: 32px;
+                border-radius:12px 12px 0 0;
+                .people-number{
+                    width: auto;
+                    height: auto;
+                    font-size: 24px;
+                    line-height: 24px;
+                    padding: 8px 16px;
+                    border:1px solid rgba(254,154,81,1);
+                    background:rgba(255,248,243,1);
+                    border-radius:4px;
+                    color: #FE9A51;
+                    margin-left: 32px;
+                    font-weight: normal;
+                }
+            }
+        }
+        .tab{
+            width: 100%;
+            padding: 0 32px 32px 32px;
+            justify-content: space-between;
+            background: #FFFFFF;
+            .tab-item{
+                width: 303px;
+                height: 76px;           
+                border-radius: 12px;
+                align-items: center;
+                justify-content: space-around;
+                color: $color-666;
+                font-size: 28px;              
+                border: 1px solid #CCCCCC;
+                &.active{
+                    border: 1px solid #FE9A51;
+                    color: #FE9A51;
+                }
+            }
+        }
+        .add{
+            width: 718px;
+            height: 92px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 20px 0px rgba(254,154,81,0.11);
+            border-radius: 12px;
+            font-size: 28px;
+            color: #FE9A51;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+    .bottom{
+        width: 100%;
+        height: 200px;
+        flex-direction: column;
+        .bottom-top{
+            width: 100%;
+            flex: 1;
+            background: $white;
+            border-top: 1px solid rgba(197,197,197,0.25);
+            align-items: center;
+            padding: 0 32px;
+            font-size: 24px;
+            color: $color-999;
+            .select{
+                width: 26px;
+                height: 26px;
+                border: 1px solid $color-main-yellow;
+                border-radius: 50%;
+                margin-right: 8px;
+                position: relative;
+                &.active{
+                    background: $color-main-yellow;
+                }
+                .select-img{
+                    position: absolute;
+                    left: 4px;
+                    top: 6px;
+                    width: 16px;
+                    height: 12px;
+                    z-index: 100;
+                    overflow: visible;
+                    line-height: normal;
+                }
+            }
+            .proto{
+                color: $color-main-yellow;
+            }
+        }
+        .bottom-bottom{
+            width: 100%;
+            height: 100px;
+            background: $white;
+            border-top: 1px solid rgba(197,197,197,0.25);
+            .left{
+                width: 55%;
+                height: 100%;
+                background: $white;
+                padding: 0 32px;
+                align-items: center;
+                font-size: 28px;
+                color: $color-999;
+                line-height: 28px;
+                .money{
+                    font-weight: bold;
+                    font-size: 40px;
+                    line-height: 40px;
+                    color: $color-main-yellow;
+                }
+            }
+            .right{
+                width: 45%;
+                height: 100%;
+                align-items: center;
+                justify-content: space-around;
+                font-size: 32px;
+                color: $color-999;
+                font-weight: bold;
+                background:rgba(204,204,204,1);
+                opacity:0.29;
+                &.active{
+                    background: $color-main-yellow;
+                    color: $white;
+                    opacity: 1;
+                }
+            }
+        }
+        
+    }
+}

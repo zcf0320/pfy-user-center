@@ -1,0 +1,31 @@
+.page-phone-index {
+    width: 100%;
+    min-height: 100%;
+    background: #f6f6f6;
+    align-items: center;
+    flex-direction: column;
+    .phone-index {
+        flex: 1;
+        .phone-image {
+            width: 686px;
+            height: 1080px;
+            background-image: url("#{$ossHost}phone_line.png");
+            background-size: 686px 1080px;
+            margin-top: 48px;
+            box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+        }
+    }
+    .phone-bottom {
+        width: 440px;
+        height: 88px;
+        background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+        box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+        border-radius: 44px;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 32px;
+        color: #fff;
+        margin-top: 48px;
+        margin-bottom: 64px;
+    }
+}

@@ -1,0 +1,13 @@
+.all {
+    font-size: 28px;
+    color: #999;
+    flex-direction: column;
+    align-items: center;
+    .none {
+        width: 600px;
+        height: 482px;
+        background: url("#{$ossHost}none_pression.png") no-repeat;
+        background-size: 100% 100%;
+        margin-top: 298px;
+    }
+}

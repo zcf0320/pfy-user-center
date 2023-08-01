@@ -1,0 +1,16 @@
+export const GET_TYPES = 'GET_TYPES';
+export const GET_ARTICLE = 'GET_ARTICLE';
+export const GET_HISTORY = 'GET_HISTORY';
+export const SET_TYPES = 'SET_TYPES';
+export const SET_PRODUCT_TYPE = 'SET_PRODUCT_TYPE';
+export const GET_PRODUCT_LIST = 'GET_PRODUCT_LIST';
+export const GET_PRODUCT_DETAIL = 'GET_PRODUCT_DETAIL';
+export const GET_ORDER_LIST = 'GET_ORDER_LIST';
+export const GET_ORDER_DETAIL = 'GET_ORDER_DETAIL';
+export const SET_VISIT_INFO = 'SET_VISIT_INFO';
+export const SET_RECOMMEND_LIST = 'SET_RECOMMEND_LIST';
+export const SET_GROUP_LIST = 'SET_GROUP_LIST';
+export const SELECT_LIST = 'SELECT_LIST';
+export const RESET_LIST = 'RESET_LIST';
+export const SET_BUY_NUMBER = 'SET_BUY_NUMBER';
+export const SET_IMPORT_LIST = 'SET_IMPORT_LIST';

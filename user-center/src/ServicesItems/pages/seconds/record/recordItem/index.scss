@@ -1,0 +1,137 @@
+.component-record-item {
+    width: 686px;
+    // height: 280px;
+    background: #ffffff;
+    box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+    border-radius: 12px;
+    padding: 32px;
+    padding-bottom: 20px;
+    margin-top: 32px;
+    // margin-top: 32px;
+    .top {
+        padding-bottom: 32px;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+        .record-item-title {
+            font-size: 32px;
+            color: #333;
+            line-height: 1;
+            font-weight: bold;
+            align-items: center;
+            justify-content: space-between;
+            .right {
+                width: 112px;
+                height: 32px;
+
+                &.status-1 {
+                    background: url("#{$ossHost}examine_status_1.png") no-repeat;
+                    background-size: 112px 32px;
+                }
+                &.status-2 {
+                    background: url("#{$ossHost}examine_status_2.png") no-repeat;
+                    background-size: 112px 32px;
+                }
+                &.status-3 {
+                    background: url("#{$ossHost}examine_status_3.png") no-repeat;
+                    background-size: 112px 32px;
+                }
+                &.status-4 {
+                    background: url("#{$ossHost}examine_status_4.png") no-repeat;
+                    background-size: 112px 32px;
+                }
+            }
+        }
+        .address {
+            font-size: 28px;
+            color: $color-666;
+            line-height: 1;
+            margin: 24px 0 16px;
+        }
+        .time {
+            margin-top: 64px;
+            font-size: 28px;
+            color: $color-666;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    .reason {
+        width: 100%;
+    }
+    .fail-reason {
+        font-size: 24px;
+        color: $color-999;
+        line-height: 40px;
+        width: 100%;
+        .reason-text {
+            font-size: 24px;
+            color: $color-999;
+            line-height: 40px;
+            margin-top: 16px;
+            width: 100%;
+            word-break: break-word;
+        }
+        .reason-title {
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 24px;
+            color: $color-999;
+            line-height: 1;
+            .right {
+                align-items: center;
+                font-size: 24px;
+                color: #febd44;
+                line-height: 1;
+                .top-icon {
+                    width: 24px;
+                    height: 24px;
+                    margin-left: 12px;
+                    transition-duration: 0.5s;
+                    &.hide {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+    .bottom {
+        align-items: center;
+        padding-top: 20px;
+        font-size: 24px;
+        color: $color-999;
+        justify-content: space-between;
+        &.none-reason {
+            justify-content: flex-end;
+            .reason {
+                display: none;
+            }
+        }
+    }
+    .btn {
+        width: 144px;
+        height: 48px;
+        border-radius: 36px;
+        border: 1px solid #fd665a;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 24px;
+        line-height: 1;
+        color: #ff775d;
+        margin-left: 24px;
+        position: relative;
+        &.btn-in {
+            color: $white;
+            background: linear-gradient(90deg, #ef7064 0%, #db4d40 100%);
+            border: none;
+        }
+        .integral {
+            width: 68px;
+            height: 40px;
+            background: url("#{$ossHost}integral.png") no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+            left: -48px;
+            top: -20px;
+        }
+    }
+}

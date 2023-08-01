@@ -1,0 +1,165 @@
+.component-life-habit {
+  width: 100%;
+  // padding: 32px;
+  flex-direction: column;
+  align-items: center;
+  .life-habit-content {
+    background-color: $white;
+    width: 100%;
+    padding: 0 32px;
+    box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+    .content-title {
+      width: 100%;
+      font-size: 32px;
+      font-weight: bolder;
+      color: #333333;
+      line-height: 32px;
+      padding: 32px 0;
+    }
+    .content-item {
+      width: 100%;
+      box-shadow: 0px 1px 0px 0px rgba(204, 204, 204, 0.5);
+      &:last-of-type {
+        box-shadow: none;
+      }
+      .content-item-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 96px;
+        .icon-img {
+          width: 48px;
+          height: 48px;
+          margin-right: 24px;
+        }
+        .icon-next {
+          width: 32px;
+          height: 32px;
+          margin-left: 16px;
+        }
+        .content-item-text {
+          font-size: 28px;
+          color: #333333;
+          line-height: 28px;
+        }
+        .content-item-left {
+          display: flex;
+          align-items: center;
+        }
+        .content-item-right {
+          display: flex;
+          align-items: center;
+        }
+      }
+      .content-item-bottom {
+        display: flex;
+        flex-wrap: wrap;
+        .content-tag {
+          width: 186px;
+          height: 60px;
+          border-radius: 8px;
+          border: 1px solid #ff5a47;
+          color: #ff5a47;
+          font-size: 24px;
+          line-height: 60px;
+          text-align: center;
+          margin: 0 32px 32px 0;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          &:nth-of-type(3n) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+  .drawer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .drawer-tags {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      .drawer-tags-item {
+        width: 160px;
+        height: 64px;
+        background: #f4f4f4;
+        border-radius: 32px;
+        font-size: 24px;
+        font-weight: 400;
+        color: #333333;
+        line-height: 64px;
+        margin-right: 15px;
+        text-align: center;
+        margin-bottom: 16px;
+        &:nth-of-type(4n) {
+          margin-right: 0;
+        }
+        &.select {
+          border: 1px solid #ff775d;
+          color: #ff775d;
+          background: $white;
+        }
+      }
+    }
+    .drawer-btn {
+      width: 686px;
+      height: 80px;
+      background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+      box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+      border-radius: 44px;
+      font-size: 32px;
+      color: #ffffff;
+      line-height: 80px;
+      text-align: center;
+      margin-bottom: 32px;
+      margin-top: 16px;
+      &.disable {
+        background: #dcdddc;
+        box-shadow: none;
+        color: $white;
+      }
+    }
+    .drawer-tagsHasTitle {
+      width: 100%;
+      height: 96px;
+      box-shadow: 0px 1px 0px 0px rgba(204, 204, 204, 0.5);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 32px;
+      .drawer-tagsHasTitle-title {
+        font-size: 28px;
+        color: #333333;
+        line-height: 28px;
+      }
+      .drawer-tagsHasTitle-list {
+        display: flex;
+        align-items: center;
+        .drawer-tagsHasTitle-item {
+          width: 77px;
+          height: 48px;
+          border-radius: 7px;
+          border: 1px solid #cccccc;
+          font-size: 24px;
+          color: #cccccc;
+          line-height: 48px;
+          text-align: center;
+          margin-left: 64px;
+          &.select {
+            border: 1px solid #ff775d;
+            color: #ff5a47;
+          }
+        }
+      }
+    }
+  }
+}

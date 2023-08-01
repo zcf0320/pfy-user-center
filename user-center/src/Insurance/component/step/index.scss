@@ -1,0 +1,27 @@
+.steps {
+  width: 100vw;
+  height: 96px;
+  min-height: 96px;
+  background-size: 100% 100%;
+  display: flex;
+  .item {
+    width: 33.3%;
+    height: 100%;
+    text-align: center;
+    line-height: 96px;
+    color: #999999;
+    font-size: 28px;
+  }
+  .item-active {
+    color: #ffffff;
+  }
+}
+.steps-1 {
+  background-image: url("#{$ossHost}images/step_1.png");
+}
+.steps-2 {
+  background-image: url("#{$ossHost}images/step_2.png");
+}
+.steps-3 {
+  background-image: url("#{$ossHost}images/step_3.png");
+}

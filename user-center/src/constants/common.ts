@@ -1,0 +1,9 @@
+export const SET_USER_INFO = 'GET_USER_INFO';
+export const REGISTER = 'REGISTER';
+export const IS_SHOW_LOGIN = 'IS_SHOW_LOGIN';
+export const GET_SIGN_LIST = 'GET_SIGN_LIST';
+export const GET_QUESTIONNAURE_LIST = 'GET_QUESTIONNAURE_LIST';
+export const SET_MODAL = 'SET_MODAL';
+export const INIT_MODAL = 'INIT_MODAL';
+export const SET_TOKEN = 'SET_TOKEN';
+export const SET_WEIXIN_USERINFO = 'SET_WEIXIN_USERINFO';

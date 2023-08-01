@@ -1,0 +1,72 @@
+.page-inquire-index {
+  width: 100%;
+  height: 100%;
+  background: $white;
+  flex-direction: column;
+  position: relative;
+  .content {
+    flex: 1;
+    .content-1 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: #fff3f3;
+      padding-top: 96px;
+      .content-img {
+        width: 690px;
+        height: 810px;
+        background-image: url("#{$ossHost}inquire_index_new.png");
+        background-size: 100% 100%;
+        margin: 0 auto;
+        &.en {
+          background-image: url("#{$ossHost}inquire_index_new_en.png");
+          background-size: 100% 100%;
+        }
+      }
+      .go {
+        width: 440px;
+        height: 88px;
+        background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+        box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+        border-radius: 44px;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 32px;
+        color: $white;
+        position: absolute;
+        left: 154px;
+        bottom: 64px;
+        z-index: 10;
+      }
+    }
+    .content-2 {
+      width: 100%;
+      .title {
+        width: 100%;
+        height: 96px;
+        padding: 0 32px;
+        align-items: center;
+        font-size: 32px;
+        color: $color-333;
+        font-weight: bold;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+        .icon {
+          width: 32px;
+          height: 32px;
+          background-image: url("#{$ossHost}inquire_record_icon.png");
+          background-size: 100% 100%;
+          margin-right: 16px;
+        }
+      }
+      .order-list {
+        padding: 32px;
+        flex-direction: column;
+        height: 100%;
+        &.none {
+          align-items: center;
+          justify-content: space-around;
+        }
+      }
+    }
+  }
+}

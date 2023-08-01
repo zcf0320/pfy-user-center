@@ -1,0 +1,57 @@
+@import '@styles/theme.scss';
+.page-select-profession{
+    width: 100vw;
+    height: 100%;
+    background: #F6F6F6;
+    flex-direction: column;
+    .select-profession-content{
+        flex: 1;
+        width: 100%;
+        overflow: scroll;
+        flex-direction: column;
+        align-items: center;
+        .content-item{
+            width: 686px;
+            height: 144px;
+            box-shadow: 0px 5px 22px 0px rgba(231,231,231,0.5);
+            border-radius: 12px;
+            background: #fff;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 29px;
+            color: $color-666;
+            margin: 0 auto;
+            padding: 0 32px;
+            text-align: center;
+            margin-bottom: 32px;
+            &.select{
+                border-radius: 12px;
+                border: 1px solid #FE9A51;
+                color: #FE9A51;
+                background: rgba(254, 154, 81, 0.1);
+            }
+        }
+    }
+    .bottom{
+        width: 100vw;
+        height: 152px;
+        background: $white;
+        align-items: center;
+        justify-content: space-around;
+        .bottom-content{
+            width: 686px;
+            height: 88px;
+            border-radius: 44px;
+            font-weight: bold;
+            font-size: 32px;
+            align-items: center;
+            justify-content: space-around;
+            background: #EFEFEF;
+            color: $color-999;
+            &.active{
+                background: #FE9A51;
+                color: $white;
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.page-mouth {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    background: #fff6e5;
+    .mouth-content {
+        width: 520px;
+        height: 520px;
+        background: #febd44;
+        box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+        border-radius: 56px;
+        margin: 376px auto 38px auto;
+        position: relative;
+        z-index: 1;
+        .mouth-title-border {
+            width: 348px;
+            height: 82px;
+
+            background: #febd44;
+            position: relative;
+            top: -176px;
+            left: -8px;
+            .mouth-title-text {
+                display: block;
+                box-sizing: border-box;
+                position: absolute;
+                top: -4px;
+                left: -4px;
+                width: 348px;
+                height: 82px;
+                background: #ffffff;
+                border: 2px solid #febd44;
+                font-size: 40px;
+
+                font-weight: bolder;
+                color: #333;
+                line-height: 82px;
+                text-align: center;
+            }
+        }
+        .mouth-docter {
+            width: 348px;
+            height: 360px;
+            position: absolute;
+            right: -12px;
+            top: -192px;
+            z-index: 2;
+        }
+        .mouth-code {
+            width: 448px;
+            height: 408px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            z-index: 3;
+        }
+    }
+    .tip {
+        font-size: 28px;
+
+        font-weight: 400;
+        color: #ff775d;
+        line-height: 40px;
+        text-align: center;
+        line-height: 28px;
+    }
+    .tips-h5 {
+        font-size: 28px;
+        color: $color-333;
+        margin-top: 48px;
+    }
+    .save-image {
+        align-items: center;
+        justify-content: space-around;
+        width: 440px;
+        height: 88px;
+        background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+        box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+        border-radius: 44px;
+        color: #fff;
+        font-size: 32px;
+        margin-top: 48px;
+    }
+}

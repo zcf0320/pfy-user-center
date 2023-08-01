@@ -1,0 +1,248 @@
+@import "~taro-ui/dist/style/components/image-picker.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+.page-common {
+  width: 100%;
+  background: #f6f6f6;
+  position: relative;
+  // align-items: center;
+  // flex-direction: column;
+  padding: 32px;
+  .common-info {
+    width: 100%;
+    height: auto;
+    background: $white;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+
+    .common-title {
+      width: 100%;
+      height: 88px;
+      border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+      align-items: center;
+      font-size: 32px;
+      color: $color-333;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+    .common-item {
+      justify-content: space-between;
+      margin-bottom: 32px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .left {
+        font-size: 28px;
+        line-height: 1;
+        color: $color-333;
+      }
+      .right {
+        font-size: 28px;
+        line-height: 1;
+        color: $color-666;
+      }
+    }
+  }
+  .service-info {
+    width: 100%;
+    height: auto;
+    background: $white;
+    border-radius: 12px;
+    padding: 32px;
+    margin-top: 32px;
+    box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+    .service-item {
+      width: 100%;
+      height: 92px;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+      align-items: center;
+      &:last-child {
+        border-bottom: none;
+      }
+      .left {
+        font-size: 28px;
+        color: $color-333;
+      }
+      .right {
+        font-size: 28px;
+        margin-left: 20px;
+        color: $color-333;
+        align-items: center;
+        flex: 1;
+        justify-content: flex-end;
+        &.disbale {
+          color: $color-666;
+        }
+        .next {
+          width: 32px;
+          height: 32px;
+          background: url("#{$ossHost}images/next_gray.png");
+          background-size: 32px 32px;
+          margin-left: 16px;
+        }
+        .picker {
+          // width: 400px;
+          text-align: right;
+        }
+        .input {
+          width: 100%;
+          height: 90px;
+          font-size: 28px;
+          color: $color-333;
+          text-align: right;
+          &.code {
+            width: 200px;
+          }
+          input {
+            height: 90px;
+          }
+          taro-textarea-core {
+            width: auto;
+          }
+        }
+
+        .send-message {
+          width: 160px;
+          height: 52px;
+          color: #ff775d;
+          border-radius: 24px;
+          justify-content: space-around;
+          align-items: center;
+          border: 2px solid #ff775d;
+          margin-left: 32px;
+          font-size: 24px;
+          &.disable {
+            color: $color-999;
+            border: 1px solid #ccc;
+          }
+        }
+        .picker-select {
+          width: 100%;
+          font-size: 28px;
+          color: $color-333;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          word-break: break-all;
+
+          &.disable {
+            font-size: 28px;
+            color: #ccc;
+          }
+        }
+        .radio {
+          display: flex;
+          align-items: center;
+          &:first-child {
+            margin-right: 30px;
+          }
+          .radio-img {
+            width: 36px;
+            height: 36px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .text-area {
+      margin-top: 20px;
+      padding-bottom: 32px;
+      .title {
+        font-size: 28px;
+        color: $color-333;
+        margin-bottom: 24px;
+      }
+      .textarea {
+        width: auto;
+        padding: 32px;
+        min-height: 30px;
+        background: #fbfbfb;
+        border-radius: 12px;
+        resize: none;
+        .taro-textarea {
+          min-height: 30px;
+          background: #fbfbfb;
+          border-radius: 12px;
+          resize: none;
+          &::placeholder {
+            color: #ccc;
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+  .save {
+    width: 439px;
+    height: 88px;
+    margin: 0 auto;
+    border-radius: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: $white;
+    background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+    box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+    margin: 36px auto 64px;
+    &.disable {
+      background: #dcdddc;
+      box-shadow: 0px 6px 20px 0px rgba(204, 204, 204, 0.2);
+      margin: 36px auto;
+    }
+  }
+  .material-info {
+    width: 684px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 32px;
+    margin: 32px 0;
+    box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+    .material-title {
+      width: 100%;
+      height: 60px;
+      border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+      align-items: center;
+      font-size: 32px;
+      color: #333333;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+    .material-wrap {
+      margin-bottom: 20px;
+    }
+    .material-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 32px;
+      .left {
+        font-size: 28px;
+        line-height: 1;
+        color: #333333;
+        .red {
+          color: #ff775d;
+          font-size: 24px;
+          width: 100px;
+          white-space: nowrap;
+        }
+        .color-999 {
+          color: #999;
+          font-size: 24px;
+          width: 100px;
+          white-space: nowrap;
+        }
+      }
+      .right {
+        font-size: 28px;
+        line-height: 1;
+        color: #febd44;
+        text-decoration: underline;
+      }
+    }
+    .content {
+      font-size: 24px;
+      color: #cccccc;
+      margin-bottom: 20px;
+    }
+  }
+}

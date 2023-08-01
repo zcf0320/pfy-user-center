@@ -1,0 +1,53 @@
+.component-article-item {
+  width: 750px;
+  height: 224px;
+  padding: 0 32px;
+  background: $white;
+  //   margin-bottom: 32px;
+  .article-content {
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+    box-shadow: 0px -1px 0px 0px rgba(204, 204, 204, 0.5);
+    .image {
+      width: 160px;
+      height: 160px;
+      margin-right: 32px;
+    }
+    .content {
+      width: 494px;
+      flex-direction: column;
+      .title {
+        font-size: 28px;
+        color: #161616;
+        font-weight: bold;
+        line-height: 28px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 450px;
+      }
+      .text {
+        width: 100%;
+        height: 72px;
+        line-height: 36px;
+        font-size: 24px;
+        color: #161616;
+        margin: 16px 0 20px;
+      }
+      .time {
+        font-size: 24px;
+        line-height: 1;
+        color: $color-999;
+        align-items: center;
+        justify-content: space-between;
+        .typeName {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: 300px;
+        }
+      }
+    }
+  }
+}

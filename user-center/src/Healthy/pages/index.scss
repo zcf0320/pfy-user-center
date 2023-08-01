@@ -1,0 +1,253 @@
+.healthy-custom-bar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background: url("#{$ossHost}healthy-navbar-bg.png") no-repeat;
+  background-size: 100% 100%;
+  font-size: 32px;
+  font-weight: 500;
+  color: #333333;
+  z-index: 90;
+}
+.health-content {
+  width: 100%;
+
+  &-top {
+    width: 100%;
+    height: 218px;
+    background: url("#{$ossHost}healthy-top-bg.png") no-repeat;
+    background-size: 100% 100%;
+    padding: 30px 34px 12px 30px;
+    .health-top {
+      height: 171px;
+      padding: 0 32px;
+      background: url("#{$ossHost}health-top.png") no-repeat;
+      background-size: 100% 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .health-top-left {
+        &-avatar {
+          position: relative;
+          width: 96px;
+          height: 96px;
+          .health-top-left-img {
+            width: 96px;
+            height: 96px;
+            background: #f5f6fa;
+            border-radius: 50%;
+          }
+          &-edit {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 32px;
+            height: 32px;
+          }
+        }
+
+        .health-top-left-text-content {
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: column;
+          margin-left: 22px;
+          .health-top-left-text {
+            font-size: 32px;
+            font-weight: 500;
+            color: #ffffff;
+            text-align: left;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            .health-more-img {
+              width: 32px;
+              height: 32px;
+              margin-left: 4px;
+            }
+          }
+          .health-top-left-text-img {
+            width: 240px;
+            height: 38px;
+            background: url("#{$ossHost}health-title.png") no-repeat;
+            background-size: 100% 100%;
+          }
+        }
+      }
+      .health-top-right {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        .health-top-right-fraction {
+          font-size: 62px;
+          font-weight: 500;
+          color: #ffffff;
+          line-height: 60px;
+          margin-bottom: 6px;
+        }
+        .health-top-right-content {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .health-top-right-grade {
+            font-size: 24px;
+            font-weight: 500;
+            color: #ffffff;
+            line-height: 34px;
+            margin-right: 8px;
+          }
+          .health-top-right-grade-explain {
+            width: 32px;
+            height: 32px;
+            background: url("#{$ossHost}health-more.png") no-repeat;
+            background-size: 100% 100%;
+
+            .health-top-right-grade-explain-text {
+              position: absolute;
+              top: 50px;
+              right: -6px;
+              z-index: 99;
+              width: 440px;
+              height: 148px;
+              background: #ffffff;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 0 24px;
+              box-shadow: 0px 18px 56px 16px rgba(0, 0, 0, 0.05), 0px 12px 32px 0px rgba(0, 0, 0, 0.08),
+                0px 6px 12px -8px rgba(0, 0, 0, 0.12);
+              font-size: 28px;
+              font-weight: 400;
+              color: rgba(0, 0, 0, 0.65);
+              line-height: 44px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.health-init {
+  border-radius: 16px 16px 0px 0px;
+  margin-top: -20px;
+  .health-tap {
+    // flex: 1;
+    width: 100%;
+    background: #f2f6fa;
+    border-radius: 16px 16px 0px 0px;
+    box-sizing: border-box;
+    padding: 32px 32px 0 32px;
+
+    .record-view {
+      padding: 32px;
+      background-color: #ffffff;
+    }
+    .health-tap-left,
+    .health-tap-content,
+    .health-tap-right {
+      width: 100%;
+      // width: 248px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 96px;
+      font-size: 28px;
+      font-weight: 400;
+      color: #7b8290;
+      &.active {
+        font-size: 32px;
+        font-weight: 600;
+        color: #333333;
+      }
+    }
+    .health-tap-left {
+      background: url("#{$ossHost}health-tap-left.png") no-repeat;
+      background-size: 100% 100%;
+
+      &.active {
+        background: url("#{$ossHost}health-tap-left-active.png") no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+
+    .health-tap-content {
+      background: url("#{$ossHost}health-tap-center.png") no-repeat;
+      background-size: 100% 100%;
+
+      &.active {
+        background: url("#{$ossHost}health-tap-center-active.png") no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+
+    .health-tap-right {
+      background: url("#{$ossHost}health-tap-right.png") no-repeat;
+      background-size: 100% 100%;
+
+      &.active {
+        background: url("#{$ossHost}health-tap-right-active.png") no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    .health-understand {
+      width: 100%;
+      height: 144px;
+      background: url("#{$ossHost}health-understand.png") no-repeat;
+      background-size: 100% 100%;
+      margin: 16px 0;
+    }
+
+    .button {
+      margin: 0 auto;
+      margin-bottom: 300px;
+      width: 440px;
+      height: 88px;
+      background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+      box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+      border-radius: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      font-weight: 500;
+      color: #333333;
+    }
+  }
+  .scroll-view {
+    margin-top: 0px;
+    // border-radius: 16px;
+    // z-index: 999;
+  }
+}
+.dialog-tips {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: 100% 100%;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  .dialog-tips-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-img {
+      width: 670px;
+      height: 670px;
+    }
+    &-close {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}

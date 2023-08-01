@@ -1,0 +1,100 @@
+.search-history {
+    width: 686px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 32px;
+    .title {
+        display: flex;
+        height: 32px;
+        align-items: center;
+        .text {
+            font-size: 32px;
+
+            font-weight: 500;
+            color: #333333;
+            line-height: 32px;
+            flex: 1;
+        }
+        .action {
+            .delete-img {
+                width: 24px;
+                height: 24px;
+                background-image: url("../../images/delete-icon.png");
+                background-size: 100% 100%;
+            }
+            .delete-all {
+                display: flex;
+                .delete {
+                    font-size: 24px;
+
+                    font-weight: 400;
+                    color: #333333;
+                    line-height: 24px;
+                    padding-right: 32px;
+                }
+                .complete {
+                    font-size: 24px;
+
+                    font-weight: 400;
+                    color: #333333;
+                    line-height: 24px;
+                    padding-left: 32px;
+                    border-left: 1px solid rgba(204, 204, 204, 0.5);
+                }
+            }
+        }
+    }
+    .history-list {
+        padding-top: 32px;
+        .show-list {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .item {
+                width: 278px;
+                height: 28px;
+                font-size: 28px;
+
+                font-weight: 400;
+                color: #333333;
+                line-height: 28px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-bottom: 36px;
+            }
+        }
+        .delete-list {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .item {
+                width: 294px;
+                background: rgba(204, 204, 204, 0.1);
+                border-radius: 12px;
+                border: 1px solid #cccccc;
+                padding: 24px;
+                display: flex;
+                align-items: center;
+                margin-top: 36px;
+                .history-text {
+                    flex: 1;
+                    max-width: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    color: #333333;
+                    font-size: 28px;
+                }
+                .icon {
+                    width: 28px;
+                    height: 28px;
+                    margin-left: 16px;
+                }
+            }
+        }
+    }
+}

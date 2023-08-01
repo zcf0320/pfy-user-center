@@ -1,0 +1,117 @@
+.page-edit-info {
+    width: 100%;
+    height: 100%;
+    background: $page-bg;
+    align-items: center;
+    flex-direction: column;
+    .input-info {
+        width: 440px;
+        height: 88px;
+        background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+        box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+        border-radius: 44px;
+        font-size: 32px;
+        color: #fff;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 48px;
+    }
+    .common-item {
+        width: 750px;
+        height: 112px;
+        padding-left: 32px;
+        box-sizing: border-box;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 32px;
+        background: $white;
+        flex-direction: row;
+        &.m-t-16 {
+            margin-top: 16px;
+        }
+        &.no-border {
+            border: none;
+        }
+
+        .right {
+            color: $black;
+            align-items: center;
+            flex-direction: row;
+            font-size: 28px;
+        }
+        .left {
+            width: 716px;
+            height: 112px;
+            color: $black;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 32px;
+            color: $color-333;
+            border-bottom: 1px solid rgba(230, 231, 233, 1);
+            padding-right: 32px;
+            &.no-border {
+                border: none;
+            }
+            .no-edit {
+                margin-left: 50px;
+            }
+            .input {
+                width: 373px;
+                height: 97px;
+                margin-left: 50px;
+                &.code {
+                    width: 260px;
+                }
+            }
+            .sex-item {
+                flex-direction: row;
+                align-items: center;
+                margin-right: 67px;
+                .select {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    border: 1px solid $border-man;
+                    position: relative;
+                    margin-right: 16px;
+                    &.active {
+                        background: $border-man;
+                    }
+                    &.woman {
+                        border: 1px solid $text-error;
+                        &.active {
+                            background: $text-error;
+                        }
+                    }
+                    .select-icon {
+                        position: absolute;
+                        left: 1px;
+                        top: 2px;
+                        width: 19px;
+                        height: 14px;
+                    }
+                }
+            }
+        }
+        .error {
+            color: $text-error;
+            font-size: 18px;
+        }
+        .disable {
+            color: #aaa;
+        }
+    }
+    .confrim {
+        width: 718px;
+        height: 88px;
+        background: $main-color;
+        color: $white;
+        text-align: center;
+        line-height: 88px;
+        font-size: 32px;
+        font-weight: bold;
+        border-radius: 4px;
+        margin-top: 32px;
+    }
+}

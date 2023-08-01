@@ -1,0 +1,38 @@
+.modal-input {
+  width: 686px;
+  height: 100px;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+  align-items: center;
+  justify-content: space-between;
+  .close {
+    width: 30px;
+    height: 30px;
+  }
+  .left {
+    width: 77%;
+    height: 100%;
+    .input {
+      width: 100%;
+
+      font-size: 28px;
+      color: $color-333;
+    }
+  }
+}
+.confirm {
+  width: 440px;
+  height: 88px;
+  background: linear-gradient(180deg, #e9e5e5 0%, #cccccc 100%);
+  box-shadow: 0px 6px 20px 0px rgba(204, 204, 204, 0.2);
+  border-radius: 44px;
+  color: $white;
+  text-align: center;
+  line-height: 88px;
+  font-weight: bold;
+  margin: 64px auto;
+  font-size: 32px;
+  &.active {
+    background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+    box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+  }
+}

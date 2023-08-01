@@ -1,0 +1,95 @@
+.search-result {
+  position: relative;
+  height: 100%;
+  .result {
+    width: 686px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 0 32px;
+    max-height: 100%;
+    overflow-y: auto;
+    &.all {
+      width: 100%;
+    }
+    .item {
+      width: 100%;
+      padding: 32px 0;
+      border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+      display: flex;
+      align-items: center;
+      .icon {
+        width: 32px;
+        height: 32px;
+        background-image: url("#{$ossHost}images/search-icon.png");
+        background-size: 100% 100%;
+        margin-right: 24px;
+      }
+      .text {
+        // flex: 1;
+        // white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 28px;
+        color: #999999;
+        .undefined {
+          max-width: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: flex;
+        }
+        .recommend {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          width: 128px;
+          height: 44px;
+          font-size: 24px;
+          color: #27e0cd;
+          background: rgba(39, 224, 205, 0.1);
+          border-radius: 4px;
+          margin-right: 24px;
+          &.recommend-0 {
+            color: #ff775d;
+            background: rgba(255, 119, 93, 0.1);
+          }
+        }
+        .keyword {
+          font-size: 28px;
+          color: #333333;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .none-result {
+    width: 522px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    .none-img {
+      width: 310px;
+      height: 328px;
+      background-image: url("#{$ossHost}/no-diease-result.png");
+      background-size: 100% 100%;
+      &.no-data {
+        width: 522px;
+        height: 334px;
+        background-image: url("#{$ossHost}/claims_no_record.png");
+        background-size: 100% 100%;
+      }
+    }
+    .none-text {
+      text-align: center;
+      color: #333333;
+      font-size: 28px;
+      margin-top: 48px;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+@import "~taro-ui/dist/style/components/toast.scss";
+@import "~taro-ui/dist/style/components/indexes.scss";
+@import "~taro-ui/dist/style/components/list.scss";
+.page-network {
+    width: 100%;
+    height: 100%;
+    background: $page-bg;
+    .title {
+        width: 100%;
+        height: 92px;
+        color: $color-333;
+        padding-left: 32px;
+        box-sizing: border-box;
+        line-height: 92px;
+        font-size: 28px;
+    }
+    .select-list {
+        width: 100%;
+        height: 92px;
+        background: $white;
+        .select-item {
+            width: 375px;
+            height: 100%;
+            justify-content: space-between;
+            align-items: center;
+            color: $color-333;
+            box-sizing: border-box;
+            font-size: 28px;
+            padding: 0 64px 0 32px;
+            &.city {
+                padding: 0 32px 0 64px;
+            }
+            .tips {
+                color: $color-main-yellow;
+            }
+        }
+    }
+    .empty {
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        font-size: 20px;
+        color: $color-999;
+        line-height: 20px;
+        margin-top: 252px;
+        .img {
+            width: 604px;
+            height: 280px;
+            background: url("#{$ossHost}/network_empty.png") no-repeat;
+            background-size: 100% 100%;
+            display: block;
+        }
+        .location {
+            font-size: 28px;
+            color: $color-333;
+            line-height: 28px;
+            margin: 32px 0 16px;
+        }
+    }
+    .net-list {
+        width: 100%;
+        .net-item {
+            width: 100%;
+            padding: 32px;
+            box-sizing: border-box;
+            justify-content: space-between;
+            align-items: center;
+            background: $white;
+            border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+            &:nth-child(4n) {
+                margin-bottom: 32px;
+                border: none;
+            }
+            .address {
+                width: 510px;
+                font-size: 28px;
+            }
+            .phone {
+                align-items: center;
+                font-size: 28px;
+                color: $color-999;
+                .phone-icon {
+                    width: 28px;
+                    height: 28px;
+                    display: block;
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+}

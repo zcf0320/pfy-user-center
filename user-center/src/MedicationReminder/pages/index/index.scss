@@ -1,0 +1,118 @@
+.page-medication {
+  min-height: 100%;
+  background: #f6f6f6;
+  flex-direction: column;
+
+  .medicatuin-bg {
+    height: 140px;
+    background-image: url("#{$ossHost}medication_bg.png");
+    background-size: 100% 100%;
+    padding: 0 32px;
+    justify-content: space-between;
+    align-items: center;
+    .left {
+      flex-direction: column;
+      font-size: 32px;
+      color: $white;
+      line-height: 1;
+      .left-title {
+        font-size: 24px;
+        color: $white;
+        margin-top: 20px;
+        line-height: 1;
+      }
+    }
+    .right {
+      font-size: 28px;
+      color: $white;
+      line-height: 1;
+      align-items: center;
+      .double-next {
+        width: 24px;
+        height: 24px;
+        background-image: url("#{$ossHost}double_next.png");
+        background-size: 100% 100%;
+        margin-left: 16px;
+      }
+    }
+  }
+  .plan-list {
+    margin-top: 20px;
+    &:nth-last-child(1) {
+      margin-bottom: 64px;
+    }
+    .list-item {
+      background: $white;
+      .item-time {
+        height: 68px;
+        padding: 0 32px;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 28px;
+        color: $color-999;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+      }
+      .item-content {
+        padding: 32px;
+        padding-top: 0;
+        .medication-item {
+          margin-top: 32px;
+
+          justify-content: space-between;
+          .item-left {
+            .medication-name {
+              font-size: 28px;
+              color: $color-333;
+              line-height: 1;
+            }
+            .medication-tag {
+              margin-top: 16px;
+              line-height: 1;
+              font-size: 24px;
+              color: $color-999;
+            }
+          }
+          .item-right {
+            width: 144px;
+            height: 48px;
+            background: linear-gradient(90deg, #ef7064 0%, #db4d40 100%);
+            border-radius: 36px;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 24px;
+            color: $white;
+            &.disable {
+              background: linear-gradient(180deg, #e9e5e5 0%, #cccccc 100%);
+              box-shadow: 0px 6px 20px 0px rgba(204, 204, 204, 0.2);
+            }
+            &.over {
+              background: none;
+              color: #27e0cd;
+            }
+          }
+        }
+      }
+    }
+  }
+  .empty {
+    flex: 1;
+    background: $white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .empty-content {
+      flex-direction: column;
+      font-size: 32px;
+      color: $color-333;
+      align-items: center;
+    }
+    .empty-bg {
+      width: 450px;
+      height: 386px;
+      background-image: url("#{$ossHost}medication_none.png");
+      background-size: 100% 100%;
+      margin-bottom: 64px;
+    }
+  }
+}

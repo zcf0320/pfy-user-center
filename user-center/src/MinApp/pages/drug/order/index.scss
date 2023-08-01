@@ -1,0 +1,309 @@
+.page-order {
+  width: 100%;
+  min-height: 100%;
+  background: #fbfbfb;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  .title {
+    font-size: 32px;
+    line-height: 32px;
+    color: $color-333;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 32px;
+
+    .icon-image {
+      width: 32px;
+      height: 32px;
+      margin-right: 16px;
+    }
+  }
+
+  .address {
+    width: 686px;
+    height: 208px;
+    background: #ffffff;
+    box-shadow: 0px 6px 20px 0px rgba(217, 217, 217, 0.4);
+    border-radius: 12px;
+    margin-top: 32px;
+    position: relative;
+    padding: 32px;
+
+    .next {
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      right: 32px;
+      top: 88px;
+    }
+
+    .name {
+      font-size: 28px;
+      line-height: 28px;
+      margin: 32px 0 16px 48px;
+      color: $color-333;
+
+      .phone {
+        margin-left: 32px;
+      }
+    }
+
+    .address-detail {
+      width: 574px;
+      margin-left: 48px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      word-break: break-all;
+      font-size: 24px;
+      line-height: 24px;
+      color: $color-999;
+    }
+  }
+
+  .edit-info {
+    align-items: center;
+    justify-content: space-between;
+    width: 686px;
+    height: 96px;
+    background: #ffffff;
+    box-shadow: 0px 6px 20px 0px rgba(217, 217, 217, 0.4);
+    border-radius: 12px;
+    margin-top: 32px;
+    padding: 0 32px;
+
+    .left {
+      color: $color-333;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .right {
+      font-size: 28px;
+      color: $color-999;
+      align-items: center;
+
+      .next {
+        width: 32px;
+        height: 32px;
+        margin-left: 16px;
+      }
+    }
+  }
+
+  .doctor-info {
+    width: 686px;
+    height: 128px;
+    background: #fff;
+    box-shadow: 0px 6px 20px 0px rgba(217, 217, 217, 0.4);
+    border-radius: 12px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px;
+    border: 1px solid #467de8;
+    margin-top: 32px;
+
+    .info {
+      flex-direction: column;
+      font-size: 24px;
+      line-height: 24px;
+      color: #999;
+
+      .info-title {
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 16px;
+        color: #467de8;
+      }
+    }
+
+    .next {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .item {
+    width: 626px;
+    border-top: 1px solid rgba(204, 204, 204, 0.5);
+    padding-top: 32px;
+    &:nth-child(2) {
+      border: none;
+    }
+  }
+
+  .drug-info {
+    width: 686px;
+    height: auto;
+    background: #ffffff;
+    box-shadow: 0px 6px 20px 0px rgba(217, 217, 217, 0.4);
+    border-radius: 12px;
+    padding: 32px;
+    margin-top: 32px;
+
+    .info {
+      .img {
+        width: 160px;
+        height: 160px;
+        background: #ffffff;
+        border: 1px solid rgba(204, 204, 204, 0.5);
+        margin-right: 32px;
+      }
+
+      .right {
+        .name {
+          font-size: 28px;
+          line-height: 28px;
+          color: $color-333;
+        }
+
+        .no {
+          font-size: 24px;
+          line-height: 24px;
+          color: $color-999;
+          margin: 32px 0 16px;
+        }
+
+        .type {
+          font-size: 24px;
+          line-height: 24px;
+          color: $color-999;
+        }
+      }
+    }
+
+    .common {
+      align-items: center;
+      margin-top: 32px;
+      justify-content: space-between;
+
+      &:nth-last-child(1) {
+        margin-bottom: 32px;
+      }
+
+      .left {
+        font-size: 24px;
+        line-height: 24px;
+        color: $color-666;
+      }
+
+      .right {
+        font-size: 24px;
+        line-height: 24px;
+        color: $color-333;
+
+        .money {
+          color: #e94c40;
+        }
+      }
+    }
+  }
+
+  .service-list {
+    width: 686px;
+    background: #ffffff;
+    box-shadow: 0px 6px 20px 0px rgba(217, 217, 217, 0.4);
+    border-radius: 12px;
+    padding: 32px;
+    margin-top: 32px;
+
+    .title {
+      margin-bottom: 0;
+    }
+
+    .service-item {
+      width: 622px;
+      height: 188px;
+      border-radius: 12px;
+      border: 1px solid #cccccc;
+      justify-content: space-between;
+      align-items: center;
+      padding: 32px;
+      margin-top: 32px;
+
+      &.select {
+        border: 1px solid #467de8;
+
+        .right {
+          border: 2px solid #467de8;
+        }
+      }
+
+      .left {
+        width: 494px;
+
+        .service-name {
+          font-size: 28px;
+          color: $color-333;
+          line-height: 28px;
+        }
+
+        .service-detail {
+          width: 494px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          word-break: break-all;
+          font-size: 24px;
+          color: $color-333;
+          line-height: 24px;
+          margin: 32px 0 16px;
+        }
+
+        .time {
+          font-size: 24px;
+          color: #9d9fa2;
+          line-height: 24px;
+        }
+      }
+
+      .right {
+        width: 32px;
+        height: 32px;
+        border: 2px solid #cccccc;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: space-around;
+
+        .dot {
+          width: 16px;
+          height: 16px;
+          background: #467de8;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .confirm {
+    width: 440px;
+    height: 88px;
+    background: linear-gradient(142deg, #7bb4f5 0%, #467de8 100%);
+    box-shadow: 0px 4px 8px 0px rgba(70, 125, 232, 0.2);
+    border-radius: 44px;
+    align-items: center;
+    justify-content: space-around;
+    color: $white;
+    font-size: 32px;
+    margin: 32px 0;
+    opacity: 1;
+
+    &.disable {
+      opacity: 0.29;
+      background: #cccccc;
+      color: $color-999;
+    }
+  }
+
+  .drug_order-tips {
+    align-items: center;
+    padding: 0 32px;
+    font-size: 24px;
+    color: #febd44;
+    width: 100%;
+    height: 72px;
+    background: rgba(254, 189, 68, 0.1);
+  }
+}

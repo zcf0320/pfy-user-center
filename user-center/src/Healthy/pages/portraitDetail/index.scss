@@ -1,0 +1,187 @@
+.page-portrait-detail {
+    width: 100%;
+    height: 100%;
+    background: $white;
+    align-items: center;
+    .portratit-title {
+        font-size: 48px;
+        color: $color-333;
+        margin: 32px 0 0 32px;
+        font-weight: bold;
+    }
+    .limit {
+        font-size: 36px;
+        margin: 32px 0 0 32px;
+        color: $color-333;
+        font-weight: bold;
+    }
+    .tag-list {
+        width: 100%;
+        height: 788px;
+        background-image: url("#{$ossHost}circle.png");
+        background-size: 100% 100%;
+        position: relative;
+        margin-top: 50px;
+        .tag-item {
+            background: #f2f2f2;
+            border-radius: 8px;
+            padding: 18px 16px;
+            background: #f2f2f2;
+            border-radius: 8px;
+            font-size: 28px;
+            color: $color-333;
+            margin-right: 48px;
+            margin-bottom: 32px;
+            white-space: nowrap;
+            line-height: 1;
+            position: absolute;
+            align-items: center;
+            left: 288px;
+            top: 160px;
+            .add-icon {
+                width: 20px;
+                height: 20px;
+                background-image: url("#{$ossHost}circle_1.png");
+                background-size: 100% 100%;
+                margin-right: 4px;
+            }
+            &:nth-child(4n + 1) {
+                color: #3599fe;
+                background-color: #edf6ff;
+                .add-icon {
+                    background-image: url("#{$ossHost}circle_1.png");
+                }
+            }
+            &:nth-child(4n + 2) {
+                color: #18c4bd;
+                background-color: #e3fffd;
+                .add-icon {
+                    background-image: url("#{$ossHost}circle_2.png");
+                }
+            }
+            &:nth-child(4n + 3) {
+                color: #f64e60;
+                background-color: #ffecee;
+                .add-icon {
+                    background-image: url("#{$ossHost}circle_3.png");
+                }
+            }
+            &:nth-child(4n + 4) {
+                color: #fe9849;
+                background-color: #fffeed;
+                .add-icon {
+                    background-image: url("#{$ossHost}circle_4.png");
+                }
+            }
+            &:nth-child(2) {
+                left: 526px;
+                top: 468px;
+            }
+            &:nth-child(3) {
+                left: 56px;
+                top: 298px;
+            }
+            &:nth-child(4) {
+                left: 156px;
+                top: 528px;
+            }
+            &:nth-child(5) {
+                left: 496px;
+                top: 266px;
+            }
+            &:nth-child(6) {
+                left: 88px;
+                top: 194px;
+            }
+            &:nth-child(7) {
+                left: 404px;
+                top: 556px;
+            }
+            &:nth-child(8) {
+                left: 538px;
+                top: 362px;
+            }
+            &:nth-child(9) {
+                left: 74px;
+                top: 418px;
+            }
+            &:nth-child(10) {
+                left: 166px;
+                top: 72px;
+            }
+            &:nth-child(11) {
+                left: 72px;
+                top: 616px;
+            }
+            &:nth-child(12) {
+                left: 514px;
+                top: 170px;
+            }
+            &:nth-child(13) {
+                left: 314px;
+                top: 644px;
+            }
+            &:nth-child(14) {
+                left: 438px;
+                top: 72px;
+            }
+            &:nth-child(15) {
+                left: 40px;
+                top: -4px;
+            }
+            &:nth-child(16) {
+                left: 526px;
+                top: -22px;
+            }
+            &:nth-child(17) {
+                left: 302px;
+                top: -10px;
+            }
+            &:nth-child(18) {
+                left: 62px;
+                top: 710px;
+            }
+            &:nth-child(19) {
+                left: 338px;
+                top: 730px;
+            }
+            &:nth-child(20) {
+                left: 554px;
+                top: 642px;
+            }
+        }
+        .head {
+            width: 176px;
+            height: 202px;
+            position: absolute;
+            left: 288px;
+            top: 294px;
+            background-image: url("#{$ossHost}woman.png");
+            background-size: 100% 100%;
+            &.man {
+                background-image: url("#{$ossHost}man.png");
+            }
+        }
+    }
+    .tips {
+        font-size: 28px;
+        color: $color-999;
+        padding-left: 96px;
+        margin: 20px 0 32px;
+        .go {
+            color: #ff5a47;
+        }
+    }
+    .bottom {
+        align-items: center;
+        justify-content: space-around;
+        width: 548px;
+        height: 88px;
+        margin-left: 112px;
+        border: 2px solid rgba(255, 70, 56, 1);
+        border-radius: 44px;
+        // border-image: linear-gradient(166deg, rgba(253, 193, 149, 1), rgba(255, 70, 56, 1)) 2 2;
+        font-size: 32px;
+        color: #ff604b;
+    }
+}

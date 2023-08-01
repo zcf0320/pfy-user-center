@@ -1,0 +1,198 @@
+.page-drug-detail {
+  width: 100%;
+  height: 100%;
+  background: #f6f6f6;
+  flex-direction: column;
+  align-items: center;
+  .content {
+    flex: 1;
+    width: 100%;
+    overflow: scroll;
+    .imgs {
+      width: 100%;
+      margin-top: 32px;
+      background: $white;
+      .img-item {
+        width: 100%;
+        height: 560px;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: 0px 6px 20px 0px rgba(70, 125, 232, 0.2);
+        margin-bottom: 32px;
+        .manualPic {
+          width: 560px;
+          height: 100%;
+        }
+      }
+    }
+    .img-list {
+      width: 100%;
+      height: 560px;
+      background: $white;
+      position: relative;
+      box-shadow: 0px 6px 20px 0px rgba(70, 125, 232, 0.2);
+      border-radius: 0px 0px 24px 24px;
+      overflow: hidden;
+      .step {
+        position: absolute;
+        right: 32px;
+        bottom: 32px;
+        width: 76px;
+        // height: 32px;
+        padding: 4px 20px;
+        background: rgba(51, 51, 51, 0.2);
+        border-radius: 16px;
+        align-items: center;
+        justify-content: space-around;
+        color: $white;
+        font-size: 24px;
+        line-height: 24px;
+        z-index: 10;
+      }
+      .swiper-content {
+        width: 100%;
+        height: 560px;
+        background: $white;
+        .swiper-item {
+          width: 100%;
+          height: 100%;
+          align-items: center;
+          justify-content: space-around;
+          .image {
+            width: 560px;
+            height: 560px;
+            margin: 0 auto;
+            background: #f0f0f0;
+          }
+        }
+      }
+    }
+    .name {
+      height: 240px;
+      align-items: center;
+      padding: 32px;
+      color: $color-333;
+      background: $white;
+      .name-top {
+        font-size: 32px;
+        line-height: 32px;
+        font-weight: bold;
+        align-items: center;
+      }
+      .disease {
+        margin: 40px 0 32px;
+        font-size: 24px;
+        line-height: 24px;
+        color: $color-333;
+      }
+      .tips {
+        font-size: 24px;
+        color: $color-999;
+        align-items: center;
+        .warn {
+          width: 24px;
+          height: 24px;
+          margin-right: 16px;
+        }
+      }
+      .tag {
+        width: 68px;
+        height: 28px;
+        background: linear-gradient(142deg, #7bb4f5 0%, #467de8 100%);
+        box-shadow: 0px 4px 8px 0px rgba(70, 125, 232, 0.2);
+        border-radius: 8px;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 32px;
+        font-size: 24px;
+        color: $white;
+        font-weight: normal;
+        &.otc {
+          background: linear-gradient(151deg, #fdc195 0%, #f02e1f 100%);
+          box-shadow: 0px 4px 8px 0px rgba(255, 119, 93, 0.2);
+        }
+      }
+    }
+    .info {
+      width: 750px;
+      height: auto;
+      padding: 32px;
+      background: $white;
+      .info-title {
+        font-size: 32px;
+        line-height: 32px;
+        color: $color-333;
+        font-weight: bold;
+      }
+      .common-item {
+        margin-top: 32px;
+        font-size: 28px;
+        line-height: 28px;
+        color: $color-333;
+        .label {
+          width: 115px;
+          font-size: 28px;
+          line-height: 28px;
+          color: $color-999;
+          margin-right: 32px;
+        }
+      }
+    }
+  }
+  .bottom {
+    width: 440px;
+    height: 88px;
+    background: linear-gradient(142deg, #7bb4f5 0%, #467de8 100%);
+    box-shadow: 0px 4px 8px 0px rgba(70, 125, 232, 0.2);
+    border-radius: 44px;
+    margin: 32px 0 64px;
+    color: #fff;
+    font-size: 32px;
+    align-items: center;
+    justify-content: space-around;
+    &.disable {
+      color: #ffffff;
+      background: linear-gradient(180deg, #e9e5e5 0%, #cccccc 100%);
+      box-shadow: 0px 6px 20px 0px rgba(204, 204, 204, 0.2);
+    }
+  }
+  .drug-detail-pic {
+    position: relative;
+    .dots-box {
+      position: absolute;
+      bottom: 32px;
+      left: 45%;
+      transform: translate(0, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 99;
+      .dots {
+        width: 12px;
+        height: 12px;
+        background: rgba(70, 125, 232, 0.3);
+        border-radius: 50%;
+        margin-right: 16px;
+      }
+      .active {
+        width: 64px;
+        height: 12px;
+        background: #467de8;
+        border-radius: 6px;
+      }
+    }
+  }
+  .drug-detail-info {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333333;
+    line-height: 96px;
+    margin-left: 32px;
+  }
+  .drug-detail-btn {
+    background: #fff;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}

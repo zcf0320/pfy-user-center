@@ -1,0 +1,154 @@
+.page-audit {
+  width: 100%;
+  padding: 32px;
+
+  .audit {
+    margin-top: 32px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    .audit-item {
+      width: 100%;
+      height: 202px;
+      box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+      border-radius: 12px;
+      position: relative;
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 400;
+      color: #999999;
+      padding: 24px 34px 0 34px;
+      z-index: 1;
+
+      .tip {
+        width: 112px;
+        height: 40px;
+        background-size: contain;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 40px;
+        position: absolute;
+        top: 24px;
+        right: 0;
+        text-align: center;
+
+        .tip-text {
+          position: absolute;
+          left: 24px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      .tip.tip-yes {
+        background: url("#{$ossHost}pass.svg") no-repeat left center;
+        color: #27e0cd;
+      }
+
+      .tip.tip-no {
+        background: url("#{$ossHost}pass-no.svg") no-repeat left center;
+        color: #ff5a47;
+      }
+
+      .tip.tip-now {
+        background: url("#{$ossHost}pass-now.svg") no-repeat left center;
+        color: #febd44;
+      }
+
+      .title {
+        font-size: 32px;
+        line-height: 32px;
+        font-weight: 500;
+        color: #333333;
+        display: block;
+        margin-bottom: 40px;
+        width: calc(100% - 80px);
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      .content {
+        display: block;
+        margin-top: 24px;
+      }
+    }
+
+    .audit-reason {
+      min-height: 224px;
+      width: 100%;
+      padding: 16px 32px;
+      background: rgba(254, 189, 68, 0.1);
+      border-radius: 0px 0px 12px 12px;
+
+      .audit-reason-title {
+        font-size: 24px;
+        font-weight: 500;
+        color: #666666;
+        line-height: 24px;
+      }
+
+      .audit-reason-list {
+        line-height: 24px;
+        font-size: 24px;
+        font-weight: 400;
+        color: #999999;
+        margin-top: 16px;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          background: #febd44;
+          vertical-align: middle;
+          margin-right: 16px;
+          border-radius: 50%;
+        }
+
+        .audit-reason-item {
+          vertical-align: middle;
+          display: inline-block;
+          width: calc(100% - 24px);
+        }
+      }
+
+      .audit-reason-marks {
+        margin-top: 16px;
+        line-height: 36px;
+        font-size: 24px;
+        font-weight: 400;
+        color: #999;
+
+        .marks-title {
+          color: #febd44;
+        }
+      }
+    }
+  }
+
+  .audit-empty {
+    width: 522px;
+    height: 410px;
+    background: url("#{$ossHost}claims_no_record.png") no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    .empty-text {
+      display: block;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      font-size: 28px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 28px;
+      bottom: 0;
+    }
+  }
+}

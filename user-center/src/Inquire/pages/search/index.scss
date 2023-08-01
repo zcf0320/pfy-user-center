@@ -1,0 +1,14 @@
+.search{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #FBFBFB;
+    padding-bottom: 64px;
+    .input{
+        height: 140px;
+    }
+    .history{
+        flex: 1;
+    }
+}

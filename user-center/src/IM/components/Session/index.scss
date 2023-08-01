@@ -1,0 +1,119 @@
+.component-session {
+  flex-direction: column;
+  padding: 32px;
+  padding-top: 0;
+
+  .session {
+    &.session-user {
+      flex-direction: row-reverse;
+      .content {
+        .message-content {
+          background: linear-gradient(166deg, #fdc195 0%, #fd665a 100%);
+          box-shadow: 0px 6px 20px 0px rgba(217, 217, 217, 0.4);
+          border-radius: 0px 16px 16px 16px;
+          .message {
+            .message-text {
+              text-align: justify;
+              font-size: 24px;
+              font-weight: 400;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+    .header {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+    .content {
+      margin: 0 16px;
+      .name {
+        font-size: 24px;
+        color: #999999;
+
+        margin: 0px 0 16px 16px;
+      }
+
+      .message-content {
+        background: #ffffff;
+        box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+        border-radius: 0px 12px 12px 12px;
+        &.no-bg {
+          background: none;
+          box-shadow: none;
+        }
+        .image-file {
+          width: 398px;
+          height: 386px;
+          border-radius: 12px;
+        }
+        .message {
+          display: inline-block;
+          max-width: 512px;
+
+          padding: 24px;
+
+          .message-text {
+            text-align: justify;
+            font-size: 24px;
+            font-weight: 400;
+            color: #333333;
+            .link {
+              color: #db4d40;
+            }
+          }
+          .question-select {
+            display: flex;
+            margin-top: 32px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .select-item {
+              width: 210px;
+              height: 42px;
+              font-size: 24px;
+              text-align: center;
+              align-items: center;
+              justify-content: center;
+              color: #666666;
+              background: #f2f2f2;
+              border: 1px solid #dbdbdb;
+              border-radius: 21px;
+              margin-bottom: 16px;
+
+              .item-content {
+                width: 220px;
+
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                word-break: break-all;
+              }
+              &.select {
+                border: none;
+                color: #db4d40;
+                background: rgba(255, 119, 93, 0.1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .comment-end {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 32px auto;
+
+    .end-text {
+      background: rgba(204, 204, 204, 0.5);
+      border-radius: 25px;
+      color: #ffffff;
+      padding: 10px 32px;
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+}

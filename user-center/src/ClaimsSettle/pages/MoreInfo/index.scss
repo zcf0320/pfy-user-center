@@ -1,0 +1,33 @@
+.more-info {
+  background: #f6f6f6;
+  height: 100%;
+  padding: 32px;
+  .card {
+    margin-bottom: 30px;
+    padding: 0 32px;
+    background: #ffffff;
+    box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+    border-radius: 12px;
+
+    &-item {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 92px;
+      box-shadow: inset 0px -1px 0px 0px rgba(204, 204, 204, 0.5);
+      &:last-child {
+        box-shadow: none;
+      }
+      .left,
+      .right {
+        font-size: 28px;
+        font-weight: 400;
+        color: #333333;
+      }
+      .right {
+        color: #666666;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import '../../../../../app.scss';
+@import '@styles/theme.scss';
+.component-counter{
+    flex-direction: row;
+    align-items: center;
+    font-size: 24px;
+    color: $color-333;
+    .btn{
+        width:42px;
+        height:42px;
+        border:1px solid rgba(254,154,81,1);
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 50%;
+        margin-left: 16px;
+        line-height: 42px;
+        color: #FE9A51;
+        &.disable{
+            border:1px solid rgba(153,153,153,1);
+            color: $color-999;
+        }
+    }
+    .text{
+        margin-left: 16px;
+    }
+}

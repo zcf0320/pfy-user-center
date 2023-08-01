@@ -1,0 +1,312 @@
+.home-custom-bar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background: url("#{$ossHost}home-navbar-bg.png") no-repeat;
+  background-size: 100% 100%;
+  padding-left: 32px;
+  font-size: 32px;
+  font-weight: 500;
+  /* #ifdef h5*/
+  padding-left: 0;
+  justify-content: center;
+  /* #endif*/
+  color: #333333;
+  z-index: 90;
+  .logo {
+    width: 232px;
+    height: 64px;
+  }
+}
+.home-box {
+  background: #f2f6fa;
+  padding-bottom: 55px;
+  .top-box {
+    padding: 32px 32px 28px;
+    background: url("#{$ossHost}home-banner-bg.png") no-repeat;
+    background-size: 100% 100%;
+
+    .service-list-index {
+      margin-top: 32px;
+      flex-wrap: wrap;
+      .service-item {
+        width: 25%;
+        align-items: center;
+        flex-direction: column;
+        // margin-right: 75px;
+        font-size: 28px;
+        color: #333;
+
+        position: relative;
+        // &:nth-child(4n) {
+        //   margin-right: 0;
+        // }
+        .hot {
+          width: 60px;
+          height: 36px;
+          background-image: url("#{$ossHost}hot.png");
+          background-size: 100% 100%;
+          position: absolute;
+          left: 74px;
+          top: -18px;
+          z-index: 10;
+        }
+        .integral {
+          position: absolute;
+          width: 76px;
+          height: 36px;
+          left: 74px;
+          top: -18px;
+          z-index: 10;
+        }
+        .go-clock {
+          position: absolute;
+          width: 76px;
+          height: 36px;
+          left: 74px;
+          top: -18px;
+          z-index: 10;
+        }
+        .img {
+          width: 96px;
+          height: 96px;
+
+          margin-bottom: 24px;
+        }
+      }
+    }
+    .swiper-content {
+      height: 240px;
+    }
+    .banner-box {
+      width: 100%;
+      height: 240px;
+      border-radius: 12px;
+    }
+  }
+  .service-box {
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .service-item {
+      width: 100%;
+      height: 184px;
+      background: url("#{$ossHost}my-service-bg.png") no-repeat;
+      background-size: 100% 100%;
+      padding: 32px;
+      margin-right: 14px;
+      &.item-2 {
+        margin-right: 0;
+        background: url("#{$ossHost}my-policy-bg.png") no-repeat;
+        background-size: 100% 100%;
+        .service-subTitle {
+          color: #2679fe;
+        }
+      }
+      &.mr-34 {
+        margin-right: 34px;
+      }
+      .service-item-title {
+        font-size: 32px;
+        font-weight: 500;
+        color: #333;
+
+        &-little {
+          font-size: 24px;
+        }
+      }
+      .icon-service-img {
+        width: 48px;
+        height: 48px;
+        display: block;
+      }
+      .service-subTitle {
+        font-size: 24px;
+        color: #fe714c;
+        margin-top: 16px;
+      }
+    }
+  }
+  .middle-box {
+    background: #ffffff;
+    border-radius: 12px;
+    margin: 32px;
+    padding: 32px;
+    border-radius: 12px;
+    .service-list-speaic {
+      margin-top: 36px;
+      .service-item {
+        width: 302px;
+        height: 134px;
+        padding: 32px;
+
+        &.item-2 {
+          background: url("#{$ossHost}skin-bg.png") no-repeat;
+          background-size: 100% 100%;
+          margin-bottom: 18px;
+        }
+        &.item-3 {
+          background: url("#{$ossHost}height-bg.png") no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+      .service-item-1 {
+        width: 304px;
+        height: 284px;
+        padding: 32px;
+        background: url("#{$ossHost}ai-bg.png") no-repeat;
+        background-size: 100% 100%;
+      }
+      .describe {
+        font-size: 28px;
+        font-weight: 500;
+        color: #666666;
+      }
+      .sub-describe {
+        font-size: 24px;
+        font-weight: 400;
+        color: #a4a6b3;
+      }
+    }
+  }
+  .service-title-box {
+    height: 36px;
+    .service-title {
+      font-size: 36px;
+
+      font-weight: 600;
+      line-height: 1;
+      color: #333333;
+      position: relative;
+      .line {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100px;
+        height: 12px;
+        background: linear-gradient(180deg, #fe9a51 0%, #e94c40 100%);
+        border-radius: 6px;
+        opacity: 0.19;
+      }
+    }
+    .name {
+      font-size: 28px;
+
+      font-weight: 400;
+      color: #999999;
+      margin-right: 2px;
+    }
+    .service-more {
+      height: 32px;
+      width: 32px;
+    }
+  }
+  .health-box {
+    background: #fff;
+
+    border-radius: 12px;
+    margin: 0 32px;
+    padding: 32px;
+
+    .data-item {
+      display: flex;
+      padding-bottom: 32px;
+      justify-content: space-between;
+      border-bottom: 1px solid #f2f6fa;
+      &:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+      .left {
+        width: 426px;
+        padding: 16px 0;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .left .title {
+        font-size: 32px;
+
+        font-weight: 600;
+        color: #333;
+        line-height: 40px;
+      }
+      .left .sub-title {
+        padding: 0 10px;
+        width: fit-content;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ffecec;
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 20px;
+        color: #c74d42;
+      }
+      .right {
+        width: 180px;
+        height: 180px;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+      .time {
+        margin-left: 16px;
+        font-size: 20px;
+        font-weight: 400;
+        color: #999999;
+      }
+    }
+  }
+}
+.new-service-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(51, 51, 51, 0.7);
+  z-index: 1000;
+  &-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &-bg {
+      width: 608px;
+      height: 854px;
+      position: relative;
+      background: url("#{$ossHost}images/new-service-bg.png") no-repeat;
+      background-size: 100% 100%;
+      .btn {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 48px;
+        width: 288px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+        font-weight: 500;
+        color: #ffffff;
+        background: linear-gradient(90deg, #ef7064 0%, #db4d40 100%);
+        box-shadow: 0px 6px 20px 0px rgba(255, 119, 93, 0.2);
+        border-radius: 40px;
+      }
+    }
+    .close-icon {
+      width: 52px;
+      height: 52px;
+      margin-top: 46px;
+      background: url("#{$ossHost}images/close-service-modal.png") no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+}

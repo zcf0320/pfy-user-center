@@ -1,0 +1,118 @@
+.message-item {
+    width: 686px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    .time {
+        width: 288px;
+        height: 40px;
+        background: rgba(204, 204, 204, 0.5);
+        border-radius: 24px;
+        align-items: center;
+        justify-content: space-around;
+        margin: 48px 0 24px;
+        font-size: 24px;
+        color: $white;
+    }
+    .message-item-content {
+        width: 686px;
+        // height: 264px;
+        background: #ffffff;
+        box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+        border-radius: 12px;
+        .message-item-top {
+            width: 100%;
+            padding: 32px;
+            .top-top {
+                height: 32px;
+                font-size: 32px;
+                color: $color-333;
+                line-height: 1;
+                font-weight: bold;
+                align-items: center;
+                .icon {
+                    position: relative;
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    margin-right: 24px;
+
+                    &.icon-1 {
+                        background: url("#{$ossHost}message-2.png") no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    &.icon-2 {
+                        background: url("#{$ossHost}message-2.png") no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    &.icon-3 {
+                        background: url("#{$ossHost}message-3.png") no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    &.icon-4 {
+                        background: url("#{$ossHost}message-4.png") no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    &.icon-5 {
+                        background: url("#{$ossHost}message-5.png") no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    &.icon-6 {
+                        background: url("#{$ossHost}message-6.png") no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    &.icon-7 {
+                        background: url("#{$ossHost}message-7.png") no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    .dot {
+                        position: absolute;
+                        width: 8px;
+                        height: 8px;
+                        background: #ff5a47;
+                        right: 0;
+                        top: 0;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .top-center {
+                font-size: 28px;
+                line-height: 36px;
+                color: $color-333;
+                margin: 32px 0 24px;
+                text-align: justify;
+                &.no-bottom {
+                    margin-bottom: 0;
+                }
+            }
+            .top-bottom {
+                height: 24px;
+                font-size: 24px;
+                line-height: 1;
+                color: $color-666;
+            }
+        }
+        .message-item-bottom {
+            width: 686px;
+            height: 72px;
+
+            padding: 0 32px;
+            .bottom-content {
+                width: 100%;
+                height: 100%;
+                border-top: 1px solid rgba(204, 204, 204, 0.5);
+                align-items: center;
+                justify-content: space-between;
+                font-size: 24px;
+                color: $color-333;
+            }
+            .next {
+                width: 32px;
+                height: 32px;
+                background: url("#{$ossHost}next.png") no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+    }
+}

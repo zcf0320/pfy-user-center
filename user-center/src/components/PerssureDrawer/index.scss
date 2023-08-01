@@ -1,0 +1,67 @@
+.mall-drawer {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(51, 51, 51, 0.5);
+  z-index: 1000;
+  //   margin: 0;
+  .drawer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 24px 24px 0px 0px;
+    background: rgba(255, 255, 255, 1);
+    padding: 32px;
+    z-index: 100;
+    .drawer-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 48px;
+      .left {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .view {
+          font-size: 24px;
+          color: #febd44;
+          width: 144px;
+          height: 40px;
+          border-radius: 24px;
+          border: 1px solid #febd44;
+          margin-left: 32px;
+          text-align: center;
+          line-height: 40px;
+        }
+      }
+      .icon {
+        width: 48px;
+        height: 48px;
+        margin-right: 24px;
+      }
+      .title {
+        flex: 1;
+        font-size: 32px;
+
+        font-weight: bold;
+        color: rgba(51, 51, 51, 1);
+        line-height: 32px;
+      }
+      .icon_close {
+        width: 32px;
+        height: 32px;
+        background-image: url("#{$ossHost}mall_close.png");
+        background-size: 100% 100%;
+      }
+    }
+    .drawer-content {
+      margin-top: 32px;
+    }
+  }
+}

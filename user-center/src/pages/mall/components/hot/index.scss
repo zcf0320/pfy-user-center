@@ -1,0 +1,86 @@
+.hot {
+  background: #fff;
+  margin-bottom: 32px;
+  padding: 0 32px 32px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
+.hot-change {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // width: 686px;
+  flex-wrap: nowrap;
+
+  .hot-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 16px;
+    // width: 218px;
+    flex-wrap: nowrap;
+    &:last-child {
+      margin-right: 0;
+    }
+    .title {
+      font-size: 28px;
+      font-weight: 600;
+      color: #333333;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .rela {
+      position: relative;
+      box-shadow: 0 3px 10px 0 rgba(68, 96, 225, 0.2);
+      border-radius: 6px;
+    }
+    .pic-hot {
+      width: 200px;
+      height: 200px;
+      border-radius: 16px;
+    }
+    .pic-concent {
+      margin-top: 8px;
+    }
+    .record {
+      margin-top: 6px;
+      // justify-content: space-between;
+      align-items: center;
+      width: 178px;
+      .star {
+        width: 36px;
+        height: 36px;
+        background: url("#{$ossHost}mall-species.png") center no-repeat;
+        background-size: 100% 100%;
+      }
+      .red {
+        font-size: 28px;
+        font-weight: 500;
+        color: #f65c44;
+        line-height: 40px;
+        margin: 0 8px 0 8px;
+      }
+      .delete-text {
+        height: 28px;
+        font-size: 20px;
+        font-weight: 400;
+        color: #c2c2c2;
+        line-height: 28px;
+        text-decoration: line-through;
+      }
+      .original {
+        font-size: 24px;
+        line-height: 1;
+        color: #999999;
+        text-decoration: line-through;
+      }
+    }
+  }
+}

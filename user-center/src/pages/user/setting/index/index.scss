@@ -1,0 +1,301 @@
+.user-custom-bar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background: url("#{$ossHost}my-navbar-bg.png") no-repeat;
+  background-size: 100% 100%;
+  font-size: 32px;
+  font-weight: 500;
+  color: #333333;
+  z-index: 90;
+}
+.page-setting {
+  background: #f2f6fa;
+  .user-info {
+    width: 100%;
+    padding: 32px 32px 30px;
+    background: url("#{$ossHost}my-bg.png") no-repeat;
+    background-size: 100%;
+    z-index: 1;
+    .right {
+      display: flex;
+      .message {
+        width: 42px;
+        height: 42px;
+        position: relative;
+        .message-icon {
+          width: 42px;
+          height: 42px;
+        }
+        .red-tips {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 8px;
+          height: 8px;
+          background: #f73944;
+          border-radius: 50%;
+        }
+      }
+
+      .qrcode {
+        width: 34px;
+        height: 36px;
+        margin-left: 48px;
+      }
+    }
+
+    .left {
+      .head {
+        width: 96px;
+        height: 96px;
+        background: #fff;
+        box-shadow: 0px 4px 30px 0px rgba(68, 96, 225, 0.2);
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        margin-right: 34px;
+        .head-img {
+          width: 96px;
+          height: 96px;
+          border-radius: 50%;
+          display: block;
+        }
+      }
+      .user-name {
+        display: flex;
+        font-size: 32px;
+
+        font-weight: 600;
+        color: #333333;
+
+        .id-card {
+          width: 96px;
+          height: 34px;
+          margin-left: 6px;
+          background-image: url("#{$ossHost}has-id-card.png");
+          background-size: 100% 100%;
+          &.en {
+            background-image: url("#{$ossHost}images/idcard-en.png");
+            background-size: 100% 100%;
+          }
+          &.no-id-card {
+            background-image: url("#{$ossHost}no-id-card.png");
+            background-size: 100% 100%;
+            &.en {
+              background-image: url("#{$ossHost}images/no-idcard-en.png");
+              background-size: 100% 100%;
+            }
+          }
+        }
+      }
+      .phone {
+        vertical-align: middle;
+      }
+      &.al-login {
+        font-size: 32px;
+        line-height: 1;
+        font-weight: bold;
+        .login {
+          margin: 16px 0;
+          font-weight: normal;
+        }
+        .phone {
+          font-size: 24px;
+          color: $color-666;
+        }
+      }
+      .exit {
+        width: 98px;
+        height: 40px;
+        border-radius: 20px;
+        border: 2px solid #ff775d;
+        color: #ff775d;
+        // text-align: center;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 32px;
+        font-size: 24px;
+      }
+      .login {
+        font-size: 24px;
+        font-weight: 400;
+        color: #666666;
+      }
+    }
+
+    .column {
+      width: 33%;
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      &-value {
+        font-size: 40px;
+        font-weight: 500;
+        color: #333333;
+      }
+      &-text {
+        font-size: 24px;
+        font-weight: 400;
+        color: #333333;
+      }
+    }
+  }
+
+  .user-service-list {
+    background: #ffffff;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 32px 0;
+    padding: 32px;
+    .user-service-item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      font-size: 24px;
+      font-weight: 400;
+      color: #666666;
+      .img {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 16px;
+      }
+    }
+  }
+  .common {
+    width: 100%;
+    // height: 424px;
+    padding: 32px;
+    .common-list {
+      width: 100%;
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 0 32px;
+      .common-item {
+        width: 100%;
+        height: 112px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        &-icon {
+          width: 40px;
+          height: 40px;
+          margin-right: 16px;
+        }
+        .next {
+          width: 23px;
+          height: 23px;
+        }
+        .common-text {
+          display: flex;
+          font-size: 28px;
+          font-weight: 500;
+          color: #333333;
+        }
+
+        .contact-button {
+          width: 100%;
+          height: 112px;
+          position: absolute;
+          background: transparent;
+          border: none;
+          &:after {
+            border: 0;
+          }
+        }
+      }
+    }
+  }
+  .friend {
+    width: 100%;
+
+    padding: 0 32px;
+    .friend-title {
+      margin-bottom: 32px;
+      text-align: center;
+      .friend-title-top {
+        font-size: 20px;
+
+        color: #c0cedc;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &::before {
+          content: "";
+          display: block;
+          width: 208px;
+          height: 12px;
+          background: url("#{$ossHost}icon-seperator-left.png") no-repeat;
+          background-size: 100% 100%;
+        }
+        &::after {
+          content: "";
+          display: block;
+          width: 208px;
+          height: 12px;
+          background: url("#{$ossHost}icon-seperator-right.png") no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+    .friend-list {
+      flex-flow: row wrap;
+      justify-content: space-between;
+      .friend-item {
+        justify-content: center;
+        align-items: center;
+        width: 33%;
+        height: 48px;
+
+        margin-bottom: 32px;
+        .img-0 {
+          width: 132px;
+          height: 40px;
+        }
+        .img-1 {
+          width: 134px;
+          height: 32px;
+        }
+        .img-2 {
+          width: 154px;
+          height: 34px;
+        }
+        .img-3 {
+          width: 140px;
+          height: 28px;
+        }
+        .img-4 {
+          width: 122px;
+          height: 36px;
+        }
+        .img-5 {
+          width: 52px;
+          height: 36px;
+        }
+        .img-6 {
+          width: 140px;
+          height: 28px;
+        }
+        .img-7 {
+          width: 122px;
+          height: 38px;
+        }
+        .img-8 {
+          width: 134px;
+          height: 24px;
+        }
+        .img-9 {
+          width: 140px;
+          height: 32px;
+        }
+      }
+    }
+  }
+}

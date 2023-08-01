@@ -1,0 +1,23 @@
+.component-tabber {
+  width: 750px;
+  height: 96px;
+  background: $white;
+  .tab-item {
+    flex: 1;
+    height: 96px;
+    padding: 8px 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $color-999;
+    font-size: 24px;
+    line-height: 24px;
+    &.active {
+      color: #467de8;
+    }
+    .icon {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.component-date-picker {
+    width: 100vw;
+    height: auto;
+    background: $white;
+    .picker-top {
+        width: 100%;
+        height: 72px;
+        padding: 0 138px;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+        .pre {
+            width: 32px;
+            height: 32px;
+            background-image: url("#{$ossHost}icon-last.png");
+            background-size: 32px 32px;
+            &.next {
+                transform: rotateY(180deg);
+            }
+        }
+        .time {
+            font-size: 32px;
+            color: $color-333;
+        }
+    }
+    .list {
+        width: 100%;
+        height: 144px;
+        padding: 0 32px;
+        justify-content: space-between;
+        .list-item {
+            width: 38px;
+            flex-direction: column;
+            align-items: center;
+
+            .week {
+                margin-top: 24px;
+                font-size: 24px;
+                color: #ccc;
+                line-height: 1;
+            }
+            .day {
+                width: 38px;
+                height: 38px;
+                font-size: 24px;
+                color: $color-333;
+                align-items: center;
+                justify-content: space-around;
+                margin-top: 40px;
+                &.today {
+                    background: none;
+                    color: $color-333;
+                    border-radius: 50%;
+                    border: 2px solid #ff775d;
+                }
+                &.select {
+                    background: #ff775d;
+                    color: $white;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

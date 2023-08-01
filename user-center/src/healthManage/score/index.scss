@@ -1,0 +1,220 @@
+.page-health-score {
+    width: 100%;
+    min-height: 100%;
+    align-items: center;
+    flex-direction: column;
+    // background: $white;
+    background: #f6f6f6;
+
+    .scroll-view {
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 10;
+    }
+    .page-bg {
+        width: 100%;
+        height: 780px;
+        background: #ffffff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+    }
+    .score-border {
+        width: 212px;
+        height: 212px;
+        background: $white;
+        box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 50%;
+        margin: 42px 32px;
+        z-index: 10;
+        position: relative;
+        .score-border-content {
+            width: 176px;
+            height: 176px;
+            background: $white;
+            border-radius: 50%;
+            box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+            align-items: center;
+            font-size: 88px;
+            font-weight: bold;
+            justify-content: space-around;
+        }
+    }
+    .update-time {
+        font-size: 24px;
+        color: $color-999;
+        line-height: 1;
+        z-index: 10;
+        position: relative;
+    }
+    .update {
+        width: 208px;
+        height: 60px;
+        background: #4a6afd;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 28px;
+        color: $white;
+        margin: 32px 0 12px;
+        z-index: 10;
+        position: relative;
+    }
+    .score-bg {
+        width: 100%;
+        height: 192px;
+        background: url("#{$ossHost}health_score_bg.png") no-repeat;
+        background-size: 100% 192px;
+        z-index: 10;
+        position: relative;
+    }
+    .go-score {
+        width: 176px;
+        height: 48px;
+        background: linear-gradient(90deg, #ef7064 0%, #db4d40 100%);
+        border-radius: 24px 0px 0px 24px;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 24px;
+        color: $white;
+        position: absolute;
+        right: 0;
+        top: 42px;
+        z-index: 20;
+    }
+    .health-score-content {
+        width: 686px;
+        background: #ffffff;
+        box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+        border-radius: 12px;
+        padding: 0 32px;
+        z-index: 10;
+        margin-top: 32px;
+        position: relative;
+        .health-score-content-title {
+            font-size: 32px;
+            color: $color-333;
+            line-height: 1;
+            padding: 32px 0;
+        }
+        .content-item {
+            width: 100%;
+            height: 176px;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid rgba(204, 204, 204, 0.51);
+            .item-left {
+                align-items: center;
+                .left-icon {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    margin-right: 32px;
+                    &.icon-1 {
+                        background: url("#{$ossHost}score_icon_1.png") no-repeat;
+                        background-size: 80px 80px;
+                    }
+                    &.icon-2 {
+                        background: url("#{$ossHost}score_icon_2.png") no-repeat;
+                        background-size: 80px 80px;
+                    }
+                    &.icon-3 {
+                        background: url("#{$ossHost}score_icon_3.png") no-repeat;
+                        background-size: 80px 80px;
+                    }
+                }
+                .left-content {
+                    .left-title {
+                        font-size: 32px;
+                        color: $color-333;
+                        font-weight: bold;
+                        line-height: 1;
+                    }
+                    .left-text {
+                        font-size: 24px;
+                        color: $color-999;
+                        line-height: 1;
+                        margin-top: 24px;
+                    }
+                }
+            }
+            .item-right {
+                width: 148px;
+                height: 52px;
+                background: linear-gradient(90deg, #ef7064 0%, #db4d40 100%);
+                border-radius: 36px;
+                align-items: center;
+                justify-content: space-around;
+                font-size: 28px;
+                color: $white;
+                &.disable {
+                    background: linear-gradient(180deg, #e9e5e5 0%, #cccccc 100%);
+                    box-shadow: 0px 6px 20px 0px rgba(204, 204, 204, 0.2);
+                }
+            }
+        }
+    }
+    .score-sys {
+        width: 686px;
+        background: #ffffff;
+        box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+        border-radius: 12px;
+        padding: 32px;
+        padding-bottom: 64px;
+        position: relative;
+        margin: 32px 0 64px;
+        .doctor {
+            width: 246px;
+            height: 458px;
+            background: url("#{$ossHost}doctor.png") no-repeat;
+            background-size: 246px 458px;
+            position: absolute;
+            top: 70px;
+            right: 0;
+        }
+        .score-sys-title {
+            font-size: 48px;
+            line-height: 1;
+            color: #508ded;
+        }
+        .border {
+            width: 40px;
+            height: 6px;
+            background: #508ded;
+            margin: 32px 0;
+        }
+        .score-sys-common {
+            margin-top: 32px;
+            .score-sys-common-title {
+                font-size: 28px;
+                color: $color-333;
+                line-height: 1;
+                align-items: center;
+                font-weight: bold;
+                .score-sys-common-bg {
+                    width: 20px;
+                    height: 22px;
+                    background: url("#{$ossHost}sys_star.png") no-repeat;
+                    background-size: 20px 22px;
+                    margin-right: 16px;
+                }
+            }
+            .sys-introduce {
+                width: 412px;
+                font-size: 24px;
+                color: $color-999;
+                line-height: 36px;
+                margin-top: 24px;
+                margin-left: 36px;
+                &.introduce-three {
+                    width: 586px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,119 @@
+.claims-page {
+  width: 100%;
+  min-height: 100vh;
+  background: $page-bg;
+  .status {
+    width: 100%;
+    height: 282px;
+    margin-top: 16px;
+    position: relative;
+    .bg {
+      width: 100%;
+      height: 282px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .content {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 2;
+      padding: 32px;
+      flex-direction: column;
+      align-items: center;
+      font-size: 24px;
+      line-height: 24px;
+      color: $white;
+      .title {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 28px;
+        margin: 21px 0 16px;
+      }
+      .type {
+        width: 126px;
+        height: 126px;
+      }
+    }
+  }
+  .info {
+    width: 718px;
+    height: auto;
+    padding: 32px;
+    margin: 32px auto;
+    background: $white;
+    box-shadow: 0px 4px 20px 0px rgba(254, 154, 81, 0.11);
+    border-radius: 12px;
+    .title {
+      font-size: 28px;
+      line-height: 28px;
+      color: $color-333;
+      font-weight: bold;
+    }
+    .common {
+      font-size: 28px;
+      line-height: 28px;
+      margin-top: 24px;
+      justify-content: space-between;
+      align-items: center;
+      &.frist {
+        margin-top: 32px;
+      }
+      .left {
+        height: 28px;
+        color: $color-333;
+      }
+      .right {
+        width: 410px;
+        color: $color-666;
+        text-align: right;
+        line-height: 36px;
+        font-size: 28px;
+        &.one {
+          color: $color-333;
+        }
+      }
+    }
+  }
+  .data {
+    width: 100%;
+    height: auto;
+    padding: 32px;
+    background: $white;
+    .data-list {
+      width: 100%;
+      height: auto;
+      padding: 0 60px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .data-item {
+        .name {
+          font-size: 24px;
+          line-height: 24px;
+          color: $color-333;
+          margin: 32px 0 24px;
+        }
+        .img {
+          width: 250px;
+          height: 140px;
+          display: block;
+          background: #ccc;
+        }
+      }
+    }
+  }
+  .back {
+    width: 686px;
+    height: 89px;
+    background: $color-main-yellow;
+    border-radius: 44px;
+    color: $white;
+    font-size: 32px;
+    line-height: 89px;
+    text-align: center;
+    margin: 80px auto;
+  }
+}

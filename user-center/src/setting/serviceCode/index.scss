@@ -1,0 +1,131 @@
+.serviceCode-page {
+  width: 100%;
+  min-height: 100%;
+  flex-direction: column;
+  align-items: center;
+  background: #f6f6f6;
+  .health-tab {
+    width: 100%;
+    height: 96px;
+    background: #ffffff;
+    position: relative;
+    box-shadow: 0px 4px 8px 0px rgba(68, 96, 225, 0.1);
+    padding: 0 80px;
+    align-items: center;
+    justify-content: space-between;
+    .tab-item {
+      font-size: 32px;
+      color: $color-999;
+      &.active {
+        color: $color-333;
+        font-weight: bold;
+        &::after {
+          content: " ";
+          display: block;
+          margin: 0 auto;
+          width: 44px;
+          height: 8px;
+          background: linear-gradient(90deg, #ef7064 0%, #db4d40 100%);
+          border-radius: 4px;
+          transition: all 0.3s;
+        }
+      }
+    }
+    .line {
+      width: 44px;
+      height: 8px;
+      background: linear-gradient(90deg, #ef7064 0%, #db4d40 100%);
+      border-radius: 4px;
+      position: absolute;
+      left: 106px;
+      bottom: 12px;
+      transition: all 0.3s;
+      &.line-2 {
+        left: 352px;
+      }
+      &.line-3 {
+        left: 600px;
+      }
+    }
+  }
+  .serviceCode-list {
+    width: 100%;
+    padding: 32px;
+    flex-direction: column;
+    align-items: center;
+    .serviceCode-item {
+      width: 100%;
+      height: 224px;
+      background: #ffffff;
+      box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+      border-bottom: 8px solid #ff775d;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      padding: 32px;
+      background: url("#{$ossHost}serviceCode-bg.png") no-repeat;
+      background-size: 232px 190px;
+      background-position: top right;
+      background-color: #fff;
+      margin-bottom: 32px;
+      &.disable {
+        border-bottom: 8px solid #ccc;
+      }
+      .code-title {
+        max-width: 482px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 40px;
+        font-size: 32px;
+        color: #333333;
+        line-height: 40px;
+        margin-bottom: 16px;
+      }
+      .code-type-marketing {
+        width: 100px;
+        height: 32px;
+        background: url("#{$ossHost}MarketingActivities.png") no-repeat;
+        background-size: 100% 100%;
+        margin-bottom: 24px;
+      }
+      .code-type-service {
+        width: 100px;
+        height: 32px;
+        background: url("#{$ossHost}ServiceCompensation.png") no-repeat;
+        background-size: 100% 100%;
+        margin-bottom: 24px;
+      }
+      .code-content {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        .code-time {
+          font-size: 24px;
+          color: #999999;
+          line-height: 24px;
+        }
+        .serviceCode-btn {
+          width: 144px;
+          height: 48px;
+          background: linear-gradient(90deg, #ef7064 0%, #db4d40 100%);
+          border-radius: 36px;
+          font-size: 24px;
+          color: #ffffff;
+          line-height: 48px;
+          text-align: center;
+          &.disable {
+            background: linear-gradient(180deg, #e9e5e5 0%, #cccccc 100%);
+            box-shadow: 0px 6px 20px 0px rgba(204, 204, 204, 0.2);
+          }
+        }
+      }
+    }
+  }
+  .empty {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

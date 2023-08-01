@@ -1,0 +1,78 @@
+.claims-step1 {
+  &-top {
+    width: 686px;
+    background: #fff;
+    box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+    border-radius: 12px;
+    margin: 32px auto;
+    padding: 0 32px;
+    &-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 28px;
+      line-height: 96px;
+      box-shadow: 0px 1px 0px 0px rgba(204, 204, 204, 0.5);
+    }
+    &-left {
+      color: #333;
+    }
+    &-right {
+      color: #666;
+      width: 400px;
+      text-align: right;
+      line-height: 42px;
+    }
+  }
+  &-red {
+    color: #ff775d;
+  }
+  &-btm {
+    width: 686px;
+    background: #fff;
+    box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+    border-radius: 12px;
+    padding: 0 32px;
+    margin: 0 auto;
+    &-title {
+      width: 100%;
+      font-size: 32px;
+      font-weight: 600;
+      color: #333;
+      border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+      line-height: 32px;
+      padding: 32px 0;
+    }
+    &-content {
+      width: 100%;
+      min-height: 582px;
+      font-size: 28px;
+      color: #999;
+      line-height: 42px;
+      padding: 32px 0;
+    }
+  }
+  .claims-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &-btn {
+    width: 440px;
+    height: 88px;
+    border-radius: 44px;
+    margin: 32px auto 64px;
+    line-height: 88px;
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+  }
+  &-active {
+    background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+    box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+  }
+  &-disable {
+    background: linear-gradient(180deg, #e9e5e5 0%, #cccccc 100%);
+    box-shadow: 0px 6px 20px 0px rgba(204, 204, 204, 0.2);
+  }
+}

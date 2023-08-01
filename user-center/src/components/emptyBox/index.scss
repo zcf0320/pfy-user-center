@@ -1,0 +1,43 @@
+.component-empty-box {
+    font-size: 28px;
+    color: #999;
+    flex-direction: column;
+    align-items: center;
+    &.none {
+        color: $color-333;
+    }
+    .empty-icon {
+        width: 525px;
+        height: 334px;
+        background: url("#{$ossHost}claims_no_record.png") no-repeat;
+        background-size: 100% 100%;
+        margin-bottom: 48px;
+        &.drug {
+            width: 450px;
+            height: 386px;
+            background: url("#{$ossHost}no-report.png") no-repeat;
+            background-size: 100% 100%;
+        }
+        &.big {
+            // width: 604px;
+            // height: 328px;
+        }
+    }
+    .go-btn {
+        width: 440px;
+        height: 88px;
+        background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+        box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+        border-radius: 44px;
+        font-size: 32px;
+
+        font-weight: 400;
+        color: #ffffff;
+        line-height: 88px;
+        text-align: center;
+        position: fixed;
+        bottom: 64px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

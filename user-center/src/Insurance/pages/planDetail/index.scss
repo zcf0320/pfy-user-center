@@ -1,0 +1,36 @@
+
+@import '@styles/theme.scss';
+.page-plan{
+    width: 100%;
+    height: 100%;
+    background: $page-bg;
+}
+.plan-common{
+    padding: 0 32px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #CCCCCC;
+    background: $white;
+    &.no-border{
+        border: none;
+    }
+    &.m-t-32{
+        margin-top: 32px;
+    }
+    .left{
+        color: $color-666;
+        font-weight: bold;
+        font-size: 32px;
+    }
+    .right{
+        color: $color-666;
+        font-size: 28px;
+    }
+}
+.content{
+    padding: 32px;
+    width: 100%;
+    background: $white;
+    font-size: 24px !important;
+}

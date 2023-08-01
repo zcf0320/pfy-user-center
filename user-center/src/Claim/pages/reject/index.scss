@@ -1,0 +1,70 @@
+.reject-box {
+  height: 100%;
+  width: 100%;
+  background: #f6f6f6;
+  .reject-tip {
+    width: 100%;
+    height: 364px;
+    background: #ffffff;
+    box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+    border-radius: 12px;
+    .reject-img {
+      width: 148px;
+      height: 148px;
+    }
+    .reject-title {
+      height: 32px;
+      font-size: 32px;
+
+      font-weight: 400;
+      color: #333;
+      margin-top: 58px;
+    }
+  }
+  .reject-reason {
+    min-height: 312px;
+    background: #ffffff;
+    box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+    border-radius: 12px;
+    .reason-title {
+      height: 32px;
+      font-size: 32px;
+
+      font-weight: 600;
+      color: #333333;
+      line-height: 32px;
+    }
+    .reason-list {
+      .dot {
+        width: 16px;
+        height: 16px;
+        background: #febd44;
+        margin-right: 16px;
+        border-radius: 50%;
+      }
+      .reason-item {
+        margin-bottom: 24px;
+        .reason-content {
+          font-size: 28px;
+
+          font-weight: 400;
+          color: #333333;
+          flex: 1;
+        }
+      }
+    }
+    .reject-remark {
+      margin-top: 8px;
+      .title {
+        font-size: 24px;
+
+        font-weight: 400;
+        color: #febd44;
+        line-height: 36px;
+      }
+      .remark-content {
+        color: #999;
+      }
+    }
+  }
+}

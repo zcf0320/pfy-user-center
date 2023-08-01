@@ -1,0 +1,87 @@
+.page-detail-list {
+    width: 100%;
+    height: 100%;
+    // background: #f6f6f6;
+    flex-direction: column;
+    .page-top {
+        width: 100%;
+        height: 96px;
+        padding: 16px 32px;
+        box-shadow: 0px 4px 8px 0px rgba(68, 96, 225, 0.1);
+        color: $color-666;
+        line-height: 32px;
+        font-size: 24px;
+        .weight {
+            color: #febd44;
+        }
+    }
+    .page-list {
+        flex: 1;
+        overflow-y: scroll;
+        padding-top: 32px;
+        .list-content {
+            align-items: center;
+            flex-direction: column;
+            background: #f6f6f6;
+        }
+    }
+    // .recommend{
+    //     width: 100%;
+    //     height: auto;
+    //     position: relative;
+    //     .recommend-icon{
+    //         width: 186px;
+    //         height: 56px;
+    //         background: url('#{$ossHost}recommend_drug.png');
+    //         background-size: 100% 100%;
+    //         position: absolute;
+    //         left: 0;
+    //         top: 32px;
+    //     }
+
+    // }
+    // .line{
+    //     width: 100%;
+    //     height: 20px;
+
+    // }
+    // .list{
+    //     padding: 32px;
+    //     flex-direction: column;
+    //     align-items: center;
+    // }
+    .bottom {
+        width: 750px;
+        height: 144px;
+        background: #ffffff;
+        box-shadow: 0px -4px 12px 0px rgba(204, 204, 204, 0.15);
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 32px;
+        .left {
+            font-size: 24px;
+            color: $color-666;
+            .num {
+                font-size: 28px;
+                color: #467de8;
+                font-weight: bold;
+                margin-left: 4px;
+            }
+        }
+        .right {
+            width: 224px;
+            height: 88px;
+            background: linear-gradient(142deg, #7bb4f5 0%, #467de8 100%);
+            box-shadow: 0px 4px 8px 0px rgba(70, 125, 232, 0.2);
+            border-radius: 44px;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 28px;
+            color: $white;
+            &.disable {
+                background: linear-gradient(180deg, #e9e5e5 0%, #cccccc 100%);
+                box-shadow: 0px 6px 20px 0px rgba(204, 204, 204, 0.2);
+            }
+        }
+    }
+}

@@ -1,0 +1,5 @@
+export const GET_ARTICLE_TYPE = 'GET_ARTICLE_TYPE';
+export const GET_ARTICLE_LIST = 'GET_ARTICLE_LIST';
+export const GET_ARTICLE_DETAIL = 'GET_ARTICLE_DETAIL';
+export const SET_LOAD_ALL = 'SET_LOAD_ALL';
+export const SHARE_HEALTH = 'SHARE_HEALTH';

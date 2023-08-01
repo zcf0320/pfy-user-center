@@ -1,0 +1,50 @@
+@import "@styles/theme.scss";
+@import "../../../../../app.scss";
+.component-product {
+  width: 100vw;
+  height: 92px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 20px 0px rgba(254, 154, 81, 0.11);
+  border-radius: 12px;
+  padding: 0 48px;
+  .input-item {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 32px;
+    .left {
+      font-size: 29px;
+      color: $color-333;
+      align-items: center;
+      .must {
+        width: 11px;
+        height: 9px;
+        margin-left: 6px;
+      }
+    }
+    .right {
+      align-items: center;
+      justify-content: flex-end;
+      .picker {
+        width: 310px;
+        height: 92px;
+        flex-direction: row;
+        align-items: center;
+        .date {
+          width: 310px;
+          display: block;
+          height: 92px;
+          line-height: 92px;
+          font-size: 29px;
+          text-align: right;
+        }
+      }
+      .next {
+        width: 32px;
+        height: 32px;
+        margin-left: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+.component-tag-item {
+  width: 308px;
+  height: 192px;
+  background: $white;
+  position: relative;
+  margin-bottom: 32px;
+  .big-dot {
+    width: 48px;
+    height: 52px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0 0 0 48px;
+  }
+  .little-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    right: 38px;
+    top: 48px;
+  }
+  &:nth-child(10n + 1) {
+    .big-dot {
+      background: linear-gradient(143deg, #fdc195 0%, #fd665a 100%);
+    }
+    .little-dot {
+      background: rgba(255, 157, 138, 0.2);
+    }
+  }
+  &:nth-child(10n + 2) {
+    .big-dot {
+      background: linear-gradient(140deg, #ffffff 0%, #fac152 100%);
+    }
+    .little-dot {
+      background: rgba(255, 219, 42, 0.2);
+    }
+  }
+  &:nth-child(10n + 3) {
+    .big-dot {
+      background: linear-gradient(216deg, #ffffff 0%, #5290fa 100%);
+    }
+    .little-dot {
+      background: rgba(138, 185, 255, 0.2);
+    }
+  }
+  &:nth-child(10n + 4) {
+    .big-dot {
+      background: linear-gradient(140deg, #ffffff 0%, #5255fa 100%);
+    }
+    .little-dot {
+      background: rgba(144, 146, 252, 0.2);
+    }
+  }
+  &:nth-child(10n + 5) {
+    .big-dot {
+      background: linear-gradient(140deg, #ffffff 0%, #ff9cd9 100%);
+    }
+    .little-dot {
+      background: rgba(255, 194, 232, 0.2);
+    }
+  }
+  &:nth-child(10n + 6) {
+    .big-dot {
+      background: linear-gradient(142deg, #d1f3b7 0%, #74e2ac 100%);
+    }
+    .little-dot {
+      background: rgba(165, 228, 129, 0.2);
+    }
+  }
+  &:nth-child(10n + 7) {
+    .big-dot {
+      background: linear-gradient(145deg, #ffd6bd 0%, #fbb68b 100%);
+    }
+    .little-dot {
+      background: rgba(251, 184, 142, 0.2);
+    }
+  }
+  &:nth-child(10n + 8) {
+    .big-dot {
+      background: linear-gradient(146deg, #ffffff 0%, #b053f7 100%);
+    }
+    .little-dot {
+      background: rgba(201, 138, 255, 0.19);
+    }
+  }
+  &:nth-child(10n + 9) {
+    .big-dot {
+      background: linear-gradient(145deg, #ffbde4 0%, #ff8dca 100%);
+    }
+    .little-dot {
+      background: rgba(255, 146, 205, 0.2);
+    }
+  }
+  &:nth-child(10n + 10) {
+    .big-dot {
+      background: linear-gradient(146deg, #b2b4ff 0%, #787cff 100%);
+    }
+    .little-dot {
+      background: rgba(144, 147, 255, 0.2);
+    }
+  }
+  .tag-content {
+    width: 328px;
+    height: 192px;
+    box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+    border-radius: 8px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 24px;
+    .title {
+      font-size: 28px;
+      color: $color-333;
+      font-weight: bold;
+      line-height: 32px;
+    }
+    .time {
+      font-size: 24px;
+      color: $color-999;
+      line-height: 32px;
+    }
+    .right {
+      width: 88px;
+      height: 88px;
+    }
+  }
+}

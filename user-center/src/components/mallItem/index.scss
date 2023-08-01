@@ -1,0 +1,72 @@
+.component-mall-item {
+  width: 48%;
+
+  margin-bottom: 16px;
+  margin-right: 14px;
+  border-radius: 16px;
+  background: $white;
+  overflow: hidden;
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .card {
+    width: 304px;
+    height: 304px;
+
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img {
+    width: 304px;
+    height: 304px;
+    background: $page-bg;
+    align-items: center;
+    justify-content: space-around;
+    display: block;
+    position: relative;
+    .expect {
+      width: 148px;
+      height: 110px;
+      position: absolute;
+      top: 67px;
+      left: 84px;
+    }
+  }
+  .overflow {
+    width: 296px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .bottom {
+    background-color: #fafafa;
+    padding-bottom: 30px;
+    padding-left: 16px;
+    .bottom-title {
+      font-size: 28px;
+
+      color: $color-333;
+      padding: 24px 0 20px;
+    }
+    .compontent-score {
+      align-items: center;
+      justify-content: flex-start;
+
+      .star {
+        width: 36px;
+        height: 36px;
+        background: url("#{$ossHost}mall-species.png") center no-repeat;
+        background-size: 100% 100%;
+      }
+      .score-left {
+        font-size: 28px;
+        font-weight: 500;
+        color: #f65c44;
+        margin-left: 12px;
+      }
+    }
+  }
+}

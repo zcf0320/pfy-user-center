@@ -1,0 +1,153 @@
+.item-detail {
+    width: 100%;
+    height: 256px;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+    padding-bottom: 32px;
+}
+.recommend-item {
+    width: 686px;
+    height: 224px;
+    background: #ffffff;
+    box-shadow: 0px 6px 20px 0px rgba(70, 125, 232, 0.2);
+    border-radius: 12px;
+    padding: 32px 0;
+    padding-bottom: 20px;
+    align-items: center;
+    position: relative;
+    .allergy-tag {
+        width: 96px;
+        height: 28px;
+        background-image: url("#{$ossHost}allergy_tag.png");
+        background-size: 100% 100%;
+        margin-left: 16px;
+    }
+    .has-used {
+        width: 76px;
+        height: 28px;
+        background-image: url("#{$ossHost}has_been_use.png");
+        background-size: 100% 100%;
+        margin-left: 16px;
+    }
+    .prescription {
+        width: 116px;
+        height: 28px;
+        background-image: url("#{$ossHost}prescription.png");
+        background-size: 100% 100%;
+        margin-left: 16px;
+    }
+    &.disable {
+        background: rgba(51, 51, 51, 0.1);
+    }
+    .recommond-icon {
+        width: 48px;
+        height: 60px;
+        background-image: url("#{$ossHost}recommend_drug_icon.png");
+        background-size: 100% 100%;
+        position: absolute;
+        top: 0;
+        right: 24px;
+    }
+    .select-icon {
+        width: 32px;
+        height: 32px;
+        background-image: url("#{$ossHost}select_drug.png");
+        background-size: 100% 100%;
+        margin: 0 32px;
+    }
+    .select {
+        width: 32px;
+        height: 32px;
+        border: 2px solid #cccccc;
+        border-radius: 50%;
+        margin: 0 32px;
+        &.allgy {
+            background-image: url("#{$ossHost}allgy_select.png");
+            background-size: 100% 100%;
+        }
+    }
+    .none-bg {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgba(51, 51, 51, 0.6);
+        z-index: 10;
+        border-radius: 12px;
+        .none-image {
+            width: 156px;
+            height: 142px;
+            background-image: url("#{$ossHost}none.png");
+            background-size: 100% 100%;
+        }
+    }
+    .left {
+        .drug-icon {
+            width: 160px;
+            height: 160px;
+            margin-right: 32px;
+        }
+        .left-context {
+            .context-top {
+                .rx-bg {
+                    width: 116px;
+                    height: 28px;
+                    background: url("#{$ossHost}rx.png");
+                    background-size: 100% 100%;
+                    margin-left: 12px;
+                }
+                .type {
+                    font-size: 24px;
+                    line-height: 1;
+                    color: $white;
+                    align-items: center;
+                    justify-content: space-around;
+                    &.type-1 {
+                        width: 54px;
+                        height: 28px;
+                        background: linear-gradient(142deg, #7bb4f5 0%, #467de8 100%);
+                        box-shadow: 0px 4px 8px 0px rgba(70, 125, 232, 0.2);
+                        border-radius: 8px;
+                    }
+                    &.type-2 {
+                        width: 68px;
+                        height: 28px;
+                        background: linear-gradient(151deg, #fdc195 0%, #f02e1f 100%);
+                        box-shadow: 0px 4px 8px 0px rgba(255, 119, 93, 0.2);
+                        border-radius: 8px;
+                    }
+                }
+            }
+            .drug-name {
+                width: 334px;
+                height: 88px;
+                font-size: 28px;
+
+                font-weight: 500;
+                color: #333333;
+                line-height: 44px;
+                margin: 24px 0 8px;
+            }
+            .tag {
+                font-size: 24px;
+                line-height: 1;
+                color: $color-999;
+            }
+        }
+    }
+    .right {
+        width: 128px;
+        height: 52px;
+        background: linear-gradient(142deg, #7bb4f5 0%, #467de8 100%);
+        box-shadow: 0px 4px 8px 0px rgba(153, 153, 153, 0.49);
+        border-radius: 200px 0px 0px 200px;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 24px;
+        color: $white;
+    }
+}

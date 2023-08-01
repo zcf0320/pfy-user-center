@@ -1,0 +1,150 @@
+@import "@styles/theme.scss";
+.page-detail {
+  width: 100%;
+  min-height: 100%;
+  background: #f6f6f6;
+  .top {
+    width: 100%;
+    height: 468px;
+    background-size: 100% 100%;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-image: url("#{$ossHost}product_detail_new.png");
+    .success {
+      width: 127px;
+      height: 127px;
+      margin: 32px 0;
+      margin-bottom: 32px;
+    }
+    .reason {
+      width: 620px;
+      // height: 64px;
+      line-height: 32px;
+      font-size: 24px;
+      color: $white;
+      margin-top: 16px;
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+    color: $color-999;
+    font-size: 24px;
+    line-height: 24px;
+    .tips {
+      line-height: 32px;
+      font-size: 24px;
+      color: $white;
+    }
+    .copy {
+      color: #fe9a51;
+      margin-left: 24px;
+    }
+    .money {
+      color: #ff5a47;
+      font-size: 28px;
+      line-height: 28px;
+      font-weight: bold;
+    }
+    .money-content {
+      width: 100%;
+      height: 110px;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+    .add-money {
+      font-size: 24px;
+      color: #febd44;
+      line-height: 1;
+      margin-top: 16px;
+    }
+  }
+  .common-img {
+    width: 100%;
+    height: auto;
+    border-top: 1px solid rgba(204, 204, 204, 0.5);
+    padding: 0 32px;
+    .common-img-title {
+      padding: 32px 0;
+      font-size: 28px;
+      color: #666;
+      line-height: 1;
+    }
+    .common-img-list {
+      flex-wrap: wrap;
+      .img {
+        width: 200px;
+        height: 150px;
+        display: block;
+        margin-right: 24px;
+        margin-bottom: 32px;
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .common {
+    width: 100%;
+    height: 92px;
+    border-top: 1px solid rgba(204, 204, 204, 0.5);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    &.no-border {
+      border: none;
+    }
+    .left {
+      font-size: 29px;
+      line-height: 29px;
+      color: $color-666;
+      .tips {
+        font-size: 24px;
+        line-height: 24px;
+      }
+    }
+    .right {
+      font-size: 29px;
+      line-height: 29px;
+      color: $color-333;
+      .red {
+        color: #e94c40;
+      }
+    }
+  }
+  .common-bottom {
+    width: 100%;
+    text-align: right;
+    padding: 0 32px 32px 0;
+    font-size: 29px;
+    line-height: 29px;
+    color: $color-333;
+  }
+  .sub-title {
+    width: 100%;
+    text-align: center;
+    padding-top: 32px;
+    font-size: 29px;
+    line-height: 29px;
+    font-weight: bold;
+    border-top: 1px solid rgba(204, 204, 204, 0.5);
+  }
+  .center {
+    margin-top: 32px;
+    padding: 0 16px;
+    background: $white;
+    .title {
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 32px;
+      color: $color-333;
+      padding: 32px;
+    }
+  }
+}

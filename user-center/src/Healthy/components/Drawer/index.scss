@@ -1,0 +1,71 @@
+.drawer-overlay {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: 100% 100%;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  .drawer {
+    width: 100%;
+    position: fixed;
+    max-height: calc(100vh - 50px);
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 24px 24px 0px 0px;
+    background: rgba(255, 255, 255, 1);
+    padding: 32px;
+    z-index: 100;
+    .drawer-header {
+      display: flex;
+      height: 32px;
+      position: relative;
+      .title {
+        font-size: 32px;
+        font-weight: bold;
+        color: rgba(51, 51, 51, 1);
+        line-height: 32px;
+        align-items: center;
+        .explain {
+          position: relative;
+          .explain-bg {
+            width: 32px;
+            height: 32px;
+            margin-left: 16px;
+            background: url("#{$ossHost}/explain.png") no-repeat;
+            background-size: 100% 100%;
+          }
+          .explain-text {
+            padding: 10px 16px;
+            font-size: 24px;
+            color: $color-999;
+            line-height: 34px;
+            position: absolute;
+            background: #f6f6f6;
+            box-shadow: 0px 4px 8px 0px rgba(68, 96, 225, 0.2);
+            border-radius: 12px;
+            width: 268px;
+            left: 56px;
+            top: -72px;
+          }
+        }
+      }
+      .icon_close {
+        width: 32px;
+        height: 32px;
+        background-image: url("#{$ossHost}images/icon_close.png");
+        background-size: 100% 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+    .drawer-content {
+      margin-top: 32px;
+      height: 100%;
+    }
+  }
+}

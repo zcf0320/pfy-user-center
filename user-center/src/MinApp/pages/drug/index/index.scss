@@ -1,0 +1,476 @@
+.page-drug-index {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  flex-direction: column;
+  position: relative;
+  .content {
+    flex: 1;
+    .content-1 {
+      padding-top: 96px;
+      .drug-tips {
+        background: rgba(254, 189, 68, 0.1);
+        width: 100%;
+        height: 72px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 24px;
+        color: #febd44;
+        line-height: 72px;
+        padding: 0 32px;
+      }
+      .page-title {
+        width: 750px;
+        overflow-y: scroll;
+        height: 96px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding-right: 32px;
+        background: $white;
+        box-shadow: 0px 4px 8px 0px rgba(68, 96, 225, 0.1);
+        .tab-list {
+          overflow-y: hidden;
+          display: flex;
+          &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+            display: none;
+          }
+        }
+        .tab-item {
+          flex-shrink: 0;
+          height: 96px;
+          position: relative;
+          align-items: center;
+          justify-content: space-around;
+          font-size: 32px;
+          color: $color-999;
+          float: left;
+          padding: 0 32px;
+          &.active {
+            color: $color-333;
+            font-weight: bold;
+          }
+          .line {
+            width: 44px;
+            height: 8px;
+            background: linear-gradient(142deg, #7bb4f5 0%, #467de8 100%);
+            border-radius: 4px;
+            position: absolute;
+            left: 50%;
+            bottom: 12px;
+            transform: translate(-50%, 0);
+          }
+        }
+        .title-content {
+          width: 100%;
+          height: 98px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: 10;
+          padding: 0 110px;
+          box-sizing: border-box;
+          font-size: 32px;
+          color: rgba(255, 255, 255, 0.8);
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          .active {
+            color: $white;
+            font-weight: bold;
+          }
+          .line {
+            width: 84px;
+            height: 4px;
+            background: $white;
+            border-radius: 2px;
+            position: absolute;
+            left: 116px;
+            bottom: 18px;
+            &.active {
+              left: 320px;
+            }
+            &.active1 {
+              left: 538px;
+            }
+          }
+        }
+      }
+      .nav-bar {
+        width: 750px;
+        height: 96px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 0 96px 0 32px;
+        background: linear-gradient(146deg, #fe9a51 0%, #e94c40 100%);
+        justify-content: space-between;
+        z-index: 200;
+        .nav-bar-item {
+          width: auto;
+          height: 100%;
+          align-items: center;
+          justify-content: space-between;
+          flex-direction: column;
+          font-size: 28px;
+          color: rgba(255, 255, 255, 0.8);
+          padding: 16px;
+          padding-top: 34px;
+          line-height: 28px;
+          position: relative;
+          &.active {
+            color: rgba(255, 255, 255, 1);
+          }
+          .line {
+            width: 60px;
+            height: 4px;
+            background: #ffffff;
+            border-radius: 2px;
+          }
+        }
+        .all {
+          width: 32px;
+          height: 32px;
+          position: absolute;
+          top: 32px;
+          right: 32px;
+        }
+      }
+      .all-options {
+        width: 100%;
+        height: 100%;
+        background: rgba(51, 51, 51, 0.5);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        padding-top: 96px;
+        .all-content {
+          width: 100%;
+          height: auto;
+          padding: 32px;
+          padding-bottom: 0px;
+          background: $white;
+          overflow: hidden;
+          .all-item {
+            width: 206px;
+            height: 56px;
+            border-radius: 8px;
+            border: 1px solid #cccccc;
+            float: left;
+            color: $color-333;
+            font-size: 24px;
+            margin-bottom: 32px;
+            margin-right: 32px;
+            align-items: center;
+            justify-content: space-around;
+            &:nth-child(3n) {
+              margin-right: 0;
+            }
+            &.select {
+              background: rgba(233, 76, 64, 0.15);
+              border: 1px solid #e94c40;
+              color: #e94c40;
+            }
+          }
+        }
+      }
+      .drug-none {
+        justify-content: center;
+        align-items: center;
+      }
+      .drug-list {
+        padding: 32px;
+        width: 750px;
+        box-sizing: border-box;
+        height: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &.none {
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+        }
+        .drug-item {
+          width: 326px;
+          height: 488px;
+          background: #ffffff;
+          box-shadow: 0px 6px 20px 0px rgba(70, 125, 232, 0.2);
+          border-radius: 12px;
+          padding: 32px;
+          background: $white;
+          margin-bottom: 32px;
+          position: relative;
+          .tag {
+            width: 68px;
+            height: 28px;
+            background: linear-gradient(142deg, #7bb4f5 0%, #467de8 100%);
+            box-shadow: 0px 4px 8px 0px rgba(70, 125, 232, 0.2);
+            border-radius: 8px;
+            align-items: center;
+            justify-content: space-around;
+            margin-left: 32px;
+            font-size: 24px;
+            color: $white;
+            font-weight: normal;
+            position: absolute;
+            top: 16px;
+            left: -16px;
+            z-index: 9;
+            &.otc {
+              background: linear-gradient(151deg, #fdc195 0%, #f02e1f 100%);
+              box-shadow: 0px 4px 8px 0px rgba(255, 119, 93, 0.2);
+            }
+          }
+          .drug-img {
+            width: 264px;
+            height: 264px;
+            background: #f0f0f0;
+          }
+          .drug-name {
+            width: 100%;
+            height: 88px;
+            font-size: 28px;
+            color: $color-333;
+            line-height: 44px;
+            margin: 32px 0 16px;
+            font-weight: bold;
+          }
+          .specs {
+            font-size: 24px;
+            color: $color-999;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+    .content-2 {
+      .order-list {
+        flex-direction: column;
+        width: 750px;
+        box-sizing: border-box;
+        min-height: 100%;
+        padding-bottom: 32px;
+        &.none {
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+        }
+        .order-item {
+          width: 686px;
+          background: #ffffff;
+          box-shadow: 0px 6px 20px 0px rgba(217, 217, 217, 0.4);
+          border-radius: 12px;
+          padding: 32px;
+          padding-bottom: 0;
+          margin: 32px auto 0;
+          .order-top {
+            .info {
+              justify-content: space-between;
+              align-items: flex-start;
+              .left {
+                width: 160px;
+                height: 160px;
+                background: #ffffff;
+                box-shadow: 0px 4px 8px 0px rgba(39, 73, 146, 0.21);
+                border-radius: 12px;
+              }
+              .right {
+                width: 430px;
+                .name {
+                  align-items: center;
+                  justify-content: space-between;
+                  font-size: 28px;
+                  line-height: 28px;
+                  color: $color-333;
+                }
+                .no,
+                .type {
+                  color: $color-999;
+                  font-size: 24px;
+                  line-height: 24px;
+                }
+                .no {
+                  margin-right: 32px;
+                }
+              }
+            }
+          }
+          .order-bottom {
+            align-items: center;
+            justify-content: space-between;
+            font-size: 24px;
+            color: $color-999;
+            margin: 28px 28px 28px 0;
+            .detail {
+              width: 144px;
+              height: 48px;
+              border-radius: 24px;
+              border: 2px solid #fe9a51;
+              align-items: center;
+              justify-content: space-around;
+              font-size: 24px;
+              color: #fe9a51;
+            }
+          }
+        }
+      }
+    }
+    .content-3 {
+      background: #f6f6f6;
+      .user {
+        width: 750px;
+        height: 420px;
+        margin-bottom: 20px;
+
+        .user-info {
+          width: 100%;
+          height: 100%;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          background: url("#{$ossHost}order_mine.png");
+          background-size: 100% 100%;
+          .left {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .head-content {
+              width: 200px;
+              height: 200px;
+              align-items: center;
+              justify-content: space-around;
+              background: #fff;
+              border-radius: 50%;
+              .hade-image {
+                width: 184px;
+                height: 184px;
+                border-radius: 50%;
+              }
+            }
+            .text {
+              margin: 30px 0px 24px;
+              justify-content: center;
+              align-items: center;
+              font-size: 32px;
+              font-weight: bold;
+              color: #333;
+              .hello {
+                font-size: 24px;
+                font-weight: normal;
+                color: #fff;
+                width: 36px;
+                height: 36px;
+                background: #333333;
+                border-radius: 6px;
+                line-height: 36px;
+                text-align: center;
+                margin-right: 16px;
+              }
+            }
+          }
+          .right {
+            width: 136px;
+            height: 56px;
+            border-radius: 12px;
+            border: 1px solid #333333;
+            text-align: center;
+            font-size: 28px;
+            color: #333;
+            line-height: 56px;
+          }
+        }
+      }
+      .action-item {
+        width: 750px;
+        height: 96px;
+        padding-left: 32px;
+        background: $white;
+        .action-item-content {
+          width: 100%;
+          height: 100%;
+          border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+          align-items: center;
+          justify-content: space-between;
+          padding-right: 32px;
+          .label {
+            font-size: 32px;
+            color: $color-333;
+            align-items: center;
+            .icon-img {
+              width: 32px;
+              height: 32px;
+              margin-right: 24px;
+            }
+          }
+          .next {
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+    }
+  }
+  .order-view-detail {
+    width: 24px;
+    height: 24px;
+  }
+  .order-type {
+    justify-content: flex-start;
+    align-items: center;
+    margin: 32px 0 28px;
+  }
+  .order-specs {
+    font-size: 24px;
+    line-height: 24px;
+    align-items: center;
+    justify-content: flex-start;
+    color: $color-999;
+    .order-specs-left {
+      margin-right: 32px;
+    }
+  }
+  .order-specs-number {
+    color: #467de8;
+    font-size: 24px;
+    width: 100px;
+    position: absolute;
+    right: -35px;
+    top: -5px;
+  }
+  .order-specs-box {
+    position: relative;
+  }
+  .order-bottom-tag {
+    width: 88px;
+    height: 32px;
+    background: rgba(255, 108, 83, 0.2);
+    border-radius: 8px;
+    line-height: 32px;
+    font-size: 24px;
+    text-align: center;
+  }
+  .order-bottom0 {
+    background: rgba(255, 108, 83, 0.2);
+    color: #ff6c53;
+  }
+  .order-bottom1 {
+    background: rgba(254, 189, 68, 0.2);
+    color: #febd44;
+  }
+  .order-bottom3 {
+    background: rgba(70, 125, 232, 0.2);
+    color: #467de8;
+  }
+  .order-bottom4 {
+    background: rgba(47, 223, 205, 0.2);
+    color: #2fdfcd;
+  }
+  .order-bottom5 {
+    background: rgba(204, 204, 204, 0.2);
+    color: #999;
+  }
+}

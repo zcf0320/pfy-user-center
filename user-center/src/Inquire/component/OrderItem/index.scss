@@ -1,0 +1,109 @@
+.component-order-item-new {
+    width: 686px;
+    background: #ffffff;
+    box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+    border-radius: 12px;
+    padding: 0 32px;
+    margin-bottom: 32px;
+    .top {
+        width: 100%;
+        padding: 32px 0 24px;
+        position: relative;
+        .order-title {
+            font-weight: bold;
+            font-size: 32px;
+            color: $color-333;
+            line-height: 1;
+            margin-bottom: 24px;
+        }
+        .time {
+            font-size: 24px;
+            color: $color-999;
+            line-height: 1;
+        }
+        .hide {
+            width: 32px;
+            height: 32px;
+            background-size: 100% 100%;
+            background-image: url("#{$ossHost}show.png");
+            transform: rotateX(-180deg);
+            position: absolute;
+            top: 32px;
+            right: 0;
+        }
+    }
+    .ai-conclusion {
+        width: 100%;
+        height: auto;
+        padding-top: 24px;
+        border-top: 1px solid rgba(204, 204, 204, 0.5);
+        .ai-title {
+            font-size: 28px;
+            line-height: 1;
+            margin-bottom: 16px;
+            color: $color-333;
+        }
+        .ai-sub-title {
+            color: $color-999;
+            font-size: 24px;
+            line-height: 32px;
+            text-align: justify;
+        }
+        .ai-item {
+            width: 100%;
+            height: 128px;
+            border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+            margin-top: 32px;
+            font-size: 24px;
+            color: $color-999;
+            line-height: 1;
+            .ai-item-top {
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 24px;
+                .top-left {
+                    align-items: center;
+                    .name {
+                        line-height: 1;
+                        font-size: 32px;
+                        color: #4354a1;
+                        margin: 0;
+                        margin-right: 8px;
+                        font-weight: bold;
+                    }
+                    .number {
+                        line-height: 1;
+                        font-size: 28px;
+                        color: #febd44;
+                    }
+                }
+                .top-right {
+                    font-size: 24px;
+                    color: $color-333;
+                    align-items: center;
+                    .next {
+                        width: 32px;
+                        height: 32px;
+                        background-image: url("#{$ossHost}next.png");
+                        background-size: 100% 100%;
+                    }
+                }
+            }
+        }
+    }
+    .bottom {
+        width: 100%;
+        height: 72px;
+        border-top: 1px solid rgba(204, 204, 204, 0.5);
+        align-items: center;
+        justify-content: space-between;
+        font-size: 24px;
+        color: $color-333;
+        .show {
+            width: 32px;
+            height: 32px;
+            background-size: 100% 100%;
+            background-image: url("#{$ossHost}show.png");
+        }
+    }
+}

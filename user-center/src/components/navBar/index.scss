@@ -1,0 +1,30 @@
+.component-nav-bar {
+  width: 750px;
+  height: 88px;
+  // position: fixed;
+  // left: 0;
+  // top: 0;
+  background: $white;
+  font-weight: bold;
+  font-size: 32px;
+  color: $text-16;
+  padding: 0 16px;
+  box-sizing: border-box;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 500;
+  .index {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 32px;
+    top: 32px;
+  }
+  .back {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 16px;
+    top: 28px;
+  }
+}

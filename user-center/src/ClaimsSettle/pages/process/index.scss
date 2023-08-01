@@ -1,0 +1,73 @@
+//
+.page-process {
+  width: 100%;
+  min-height: 100%;
+  background: #fff;
+  padding: 0 32px;
+  padding-bottom: 160px;
+  .bottom {
+    width: 440px;
+    height: 88px;
+    background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+    box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+    border-radius: 44px;
+    font-size: 32px;
+    align-items: center;
+    justify-content: space-around;
+    color: #ffffff;
+    position: fixed;
+    left: 156px;
+    bottom: 64px;
+  }
+  .process-tips {
+    align-items: center;
+    margin-top: 48px;
+    .left {
+      width: 32px;
+      height: 32px;
+      background-image: url("#{$ossHost}next_yellow.png");
+      background-size: 100% 100%;
+      margin-right: 6px;
+    }
+    .right {
+      color: #febd44;
+      font-size: 32px;
+    }
+  }
+  .text-content {
+    align-items: center;
+    flex-shrink: 0;
+    position: relative;
+    margin-top: 20px;
+    .dot {
+      width: 10px;
+      height: 10px;
+      background: #febd44;
+      border-radius: 50%;
+      position: absolute;
+      left: 32px;
+      top: 10px;
+    }
+    .text {
+      color: #333333;
+      font-size: 24px;
+      line-height: 34px;
+      padding-left: 66px;
+    }
+  }
+  .process-bg {
+    width: 638px;
+    height: 1084px;
+    background-image: url("#{$ossHost}claims_process.png");
+    background-size: 100% 100%;
+    margin-top: 80px;
+    margin-left: 22px;
+  }
+  .process-title {
+    font-size: 32px;
+    color: $color-333;
+    line-height: 1;
+    text-align: center;
+    font-weight: bold;
+  }
+}

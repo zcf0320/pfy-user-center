@@ -1,0 +1,99 @@
+.page-content {
+    width: 100%;
+    height: 100%;
+}
+.page-report {
+    width: 100%;
+    height: 100%;
+
+    background: #fff6e5;
+    align-items: center;
+    justify-content: space-around;
+    .report-content {
+        align-items: center;
+        justify-content: space-around;
+        color: #ff775d;
+        font-size: 28px;
+        flex-direction: column;
+        .mouth-docter {
+            width: 348px;
+            height: 360px;
+            position: absolute;
+            right: -12px;
+            top: -192px;
+            z-index: 1;
+        }
+        .mouth-title-border {
+            width: 378px;
+            height: 82px;
+            background: #febd44;
+            position: absolute;
+            top: -176px;
+            left: -8px;
+            .mouth-title-text {
+                display: block;
+                box-sizing: border-box;
+                position: absolute;
+                top: -4px;
+                left: -4px;
+                width: 378px;
+                height: 82px;
+                background: #ffffff;
+                border: 2px solid #febd44;
+                font-size: 40px;
+                font-weight: bolder;
+                color: $color-333;
+                line-height: 82px;
+                text-align: center;
+            }
+        }
+        .report {
+            width: 448px;
+            height: 448px;
+            background: #ccc;
+            border-radius: 12px;
+            // position: absolute;
+            // left: 36px;
+            // top: 56px;
+            position: relative;
+            z-index: 10;
+        }
+        .content-top {
+            width: 520px;
+            height: 520px;
+            background: #febd44;
+            box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+            border-radius: 56px;
+            margin-bottom: 32px;
+            position: relative;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+}
+.page-empty {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 120px;
+    .empty-icon {
+        width: 450px;
+        height: 386px;
+        background: url("#{$ossHost}no-report.png") no-repeat;
+        background-size: 450px 386px;
+    }
+    .empty-title {
+        font-size: 32px;
+        color: #333;
+        margin: 64px 0 24px;
+    }
+    .empty-text {
+        text-align: center;
+        width: 590px;
+        line-height: 36px;
+        font-size: 24px;
+        color: #999;
+    }
+}

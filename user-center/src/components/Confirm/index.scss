@@ -1,0 +1,69 @@
+.drug-confirm {
+  width: 608px;
+  background: #ffffff;
+  border-radius: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &-title {
+    height: 96px;
+    box-shadow: 0px 1px 0px 0px rgba(204, 204, 204, 0.5);
+    line-height: 96px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333333;
+  }
+  &-text {
+    line-height: 32px;
+    text-align: center;
+    font-size: 32px;
+    color: #333333;
+    margin: 32px 0 28px;
+  }
+  &-subText {
+    line-height: 24px;
+    text-align: center;
+    font-size: 24px;
+    color: #999;
+  }
+  &-btns {
+    margin: 56px auto 48px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 48px;
+    height: 82px;
+    display: flex;
+  }
+  &-cancel {
+    width: 224px;
+    height: 82px;
+    background: linear-gradient(90deg, #ef7064 0%, #db4d40 100%);
+    box-shadow: 0px 6px 20px 0px rgba(204, 204, 204, 0.2);
+    border-radius: 40px;
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 82px;
+    text-align: center;
+  }
+  &-sure {
+    width: 224px;
+    height: 82px;
+    background: linear-gradient(142deg, #7bb4f5 0%, #467de8 100%);
+    box-shadow: 0px 6px 20px 0px rgba(70, 125, 232, 0.2);
+    border-radius: 40px;
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 82px;
+    text-align: center;
+  }
+}
+.drug-confirm-modal {
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 51, 51, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+}

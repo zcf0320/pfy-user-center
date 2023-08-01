@@ -1,0 +1,69 @@
+.component-select {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    z-index: 2000;
+    padding-top: 324px;
+    background: rgba(20, 20, 20, 0.51);
+    .select-modal {
+        margin: 0 auto;
+        width: 504px;
+        background: white url("#{$ossHost}select_modal_bg.png") no-repeat;
+        background-size: 504px 186px;
+        border-radius: 12px;
+        .modal-top {
+            width: 100%;
+            height: auto;
+            padding: 48px 0;
+            flex-direction: column;
+            align-items: center;
+            .modal-title {
+                font-size: 32px;
+                color: $color-333;
+                font-weight: bold;
+            }
+            .text {
+                font-size: 29px;
+                color: #999;
+                margin-top: 60px;
+            }
+            .select-list {
+                max-height: 360px;
+                overflow: scroll;
+            }
+            .select-item {
+                width: 376px;
+                height: 88px;
+                border-radius: 44px;
+                border: 1px solid #999999;
+                margin-top: 32px;
+                align-items: center;
+                justify-content: space-around;
+                font-size: 28px;
+                line-height: 36px;
+                padding: 0 28px;
+                color: #999999;
+                text-align: center;
+                &.select {
+                    color: #fe9a51;
+                    border: 1px solid #fe9a51;
+                }
+            }
+        }
+        .modal-bottom {
+            width: 100%;
+            height: 96px;
+            border-top: 1px solid rgba(204, 204, 204, 1);
+            align-items: center;
+            justify-content: space-around;
+            font-size: 32px;
+            color: #fe9a51;
+            &.disable {
+                color: #999;
+            }
+        }
+    }
+}

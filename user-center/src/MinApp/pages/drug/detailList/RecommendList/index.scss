@@ -1,0 +1,166 @@
+.component-recommend-list {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(51, 51, 51, 0.7);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    .component-recommend-list-content {
+        width: 622px;
+        height: auto;
+        background: #ffffff;
+        border-radius: 24px;
+        flex-direction: column;
+        .allergy-tag {
+            width: 96px;
+            height: 28px;
+            background-image: url("#{$ossHost}allergy_tag.png");
+            background-size: 100% 100%;
+            margin-left: 16px;
+        }
+        .has-used {
+            width: 76px;
+            height: 28px;
+            background-image: url("#{$ossHost}has_been_use.png");
+            background-size: 100% 100%;
+            margin-left: 16px;
+        }
+        .prescription {
+            width: 116px;
+            height: 28px;
+            background-image: url("#{$ossHost}prescription.png");
+            background-size: 100% 100%;
+            margin-left: 16px;
+        }
+        .content-top {
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 1;
+            color: $color-333;
+            margin: 32px 0;
+        }
+        .content-center {
+            width: 100%;
+            max-height: 672px;
+            overflow: scroll;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .center-item {
+                width: 558px;
+                height: 224px;
+                border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+                display: flex;
+                align-items: center;
+                flex-shrink: 0;
+                &.disable {
+                    background: rgba(51, 51, 51, 0.1);
+                    .select {
+                        background-image: url("#{$ossHost}allgy_select.png");
+                        background-size: 100% 100%;
+                    }
+                }
+                .select-icon {
+                    width: 32px;
+                    height: 32px;
+                    background-image: url("#{$ossHost}select_drug.png");
+                    background-size: 100% 100%;
+                }
+                .select {
+                    width: 32px;
+                    height: 32px;
+                    border: 2px solid #cccccc;
+                    border-radius: 50%;
+                    &.allgy {
+                        background-image: url("#{$ossHost}allgy_select.png");
+                        background-size: 100% 100%;
+                    }
+                }
+                .drug-icon {
+                    width: 160px;
+                    height: 160px;
+                    margin: 0 32px;
+                }
+                .left-context {
+                    .context-top {
+                        .rx-bg {
+                            width: 116px;
+                            height: 28px;
+                            background: url("#{$ossHost}rx.png");
+                            background-size: 100% 100%;
+                            margin-left: 12px;
+                        }
+                        .type {
+                            font-size: 24px;
+                            line-height: 1;
+                            color: $white;
+                            align-items: center;
+                            justify-content: space-around;
+                            &.type-1 {
+                                width: 54px;
+                                height: 28px;
+                                background: linear-gradient(142deg, #7bb4f5 0%, #467de8 100%);
+                                box-shadow: 0px 4px 8px 0px rgba(70, 125, 232, 0.2);
+                                border-radius: 8px;
+                            }
+                            &.type-2 {
+                                width: 68px;
+                                height: 28px;
+                                background: linear-gradient(151deg, #fdc195 0%, #f02e1f 100%);
+                                box-shadow: 0px 4px 8px 0px rgba(255, 119, 93, 0.2);
+                                border-radius: 8px;
+                            }
+                        }
+                    }
+                    .drug-name {
+                        width: 302px;
+                        height: 88px;
+                        font-size: 28px;
+
+                        font-weight: 500;
+                        color: #333333;
+                        line-height: 44px;
+                        margin: 24px 0 8px;
+                    }
+                    .tag {
+                        font-size: 24px;
+                        line-height: 1;
+                        color: $color-999;
+                    }
+                }
+            }
+        }
+        .content-bottom {
+            width: 100%;
+            height: 192px;
+            padding: 0 54px;
+            align-items: center;
+            justify-content: space-between;
+            .bottom-item {
+                align-items: center;
+                justify-content: space-around;
+                width: 224px;
+                height: 80px;
+                box-shadow: 0px 6px 20px 0px rgba(204, 204, 204, 0.2);
+                border-radius: 40px;
+                border: 2px solid #467de8;
+                font-size: 28px;
+                color: #467de8;
+                &.select {
+                    background: linear-gradient(142deg, #7bb4f5 0%, #467de8 100%);
+                    box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+                    border: none;
+                    color: $white;
+                }
+            }
+        }
+    }
+}

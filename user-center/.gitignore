@@ -1,0 +1,12 @@
+dist/
+dist_weapp/
+dist_h5/
+deploy_versions/
+.temp/
+.rn_temp/
+node_modules/
+.DS_Store
+
+dist_h5.zip
+.vscode/
+.history

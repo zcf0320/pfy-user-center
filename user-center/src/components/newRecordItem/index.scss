@@ -1,0 +1,83 @@
+.component-record-item {
+  width: 686px;
+  // height: 280px;
+  background: #ffffff;
+  box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+  border-radius: 12px;
+  padding: 32px;
+  padding-bottom: 20px;
+  margin: 32px auto;
+  // margin-top: 32px;
+  .top {
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+    .record-item-title {
+      font-size: 32px;
+      color: #333;
+      line-height: 1;
+      font-weight: bold;
+      align-items: center;
+      justify-content: space-between;
+      .right {
+        width: 128px;
+        height: 36px;
+        background: url("#{$ossHost}service_status_0.png") no-repeat;
+        background-size: 128px 36px;
+        &.status-1 {
+          background: url("#{$ossHost}service_status_1.png") no-repeat;
+          background-size: 128px 36px;
+        }
+        &.status-2 {
+          background: url("#{$ossHost}service_status_2.png") no-repeat;
+          background-size: 128px 36px;
+        }
+      }
+    }
+    .address {
+      font-size: 28px;
+      color: $color-666;
+      line-height: 1;
+      margin: 24px 0 16px;
+    }
+    .time {
+      font-size: 28px;
+      color: $color-666;
+      line-height: 1;
+    }
+  }
+  .bottom {
+    align-items: center;
+    padding-top: 20px;
+    font-size: 24px;
+    color: $color-999;
+    justify-content: space-between;
+
+    .btn {
+      width: 144px;
+      height: 48px;
+      border-radius: 36px;
+      border: 1px solid #fd665a;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 24px;
+      line-height: 1;
+      color: #ff775d;
+      margin-left: 24px;
+      position: relative;
+      &.btn-in {
+        color: $white;
+        background: linear-gradient(90deg, #ef7064 0%, #db4d40 100%);
+        border: none;
+      }
+      .integral {
+        width: 68px;
+        height: 40px;
+        background: url("#{$ossHost}integral.png") no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        left: -48px;
+        top: -20px;
+      }
+    }
+  }
+}

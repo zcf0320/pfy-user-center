@@ -1,0 +1,104 @@
+.leaving-message-page {
+    background: #f6f6f6;
+    min-height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 152px;
+    .leaving-message-item {
+        width: 100%;
+        background-color: #fff;
+        padding: 32px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        &-title {
+            font-size: 24px;
+            color: #666666;
+            line-height: 32px;
+            display: flex;
+            align-items: center;
+            &.nohandle {
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 96px;
+                    height: 32px;
+                    background: url("#{$ossHost}no-handle-V1.8.png") no-repeat;
+                    background-size: 100% 100%;
+                    margin-left: 16px;
+                }
+            }
+            &.yeshandle {
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 96px;
+                    height: 32px;
+                    background: url("#{$ossHost}yes-handle-V1.8.png") no-repeat;
+                    background-size: 100% 100%;
+                    margin-left: 16px;
+                }
+            }
+        }
+        &-text {
+            width: 100%;
+            background: #f6f6f6;
+            border-radius: 12px;
+            font-size: 28px;
+            color: #666666;
+            line-height: 40px;
+            padding: 32px;
+            box-sizing: border-box;
+            margin-top: 16px;
+        }
+        &-img {
+            margin-top: 32px;
+            display: flex;
+            .leaving-message-img {
+                width: 120px;
+                height: 120px;
+                margin-right: 16px;
+            }
+        }
+    }
+}
+.leaving-message-btn-add {
+    width: 440px;
+    height: 88px;
+    background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+    box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+    border-radius: 44px;
+    text-align: center;
+    line-height: 88px;
+    font-size: 32px;
+    color: #ffffff;
+    position: fixed;
+    bottom: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.leaving-message-page-empty {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: relative;
+    .empty-content {
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        &-img {
+            width: 525px;
+            height: 334px;
+            background: url("#{$ossHost}claims_no_record.png") no-repeat;
+            background-size: 100% 100%;
+            margin-bottom: 48px;
+        }
+        &-text {
+            font-size: 28px;
+            color: #999999;
+            line-height: 28px;
+            text-align: center;
+        }
+        position: absolute;
+    }
+}

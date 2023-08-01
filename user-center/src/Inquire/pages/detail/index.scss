@@ -1,0 +1,140 @@
+.page-inquire-detail {
+    width: 100%;
+    min-height: 100%;
+    background: #f6f6f6;
+    flex-direction: column;
+    align-items: center;
+    &.none {
+        justify-content: space-around;
+    }
+    .detail-item {
+        width: 686px;
+        background: #ffffff;
+        box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+        border-radius: 12px;
+        padding: 32px;
+        margin-top: 32px;
+        &.evaluate {
+            align-items: center;
+            flex-direction: column;
+            padding: 48px 0;
+            font-size: 28px;
+            line-height: 1;
+            color: $color-333;
+            margin-bottom: 32px;
+            .effect-list {
+                width: 336px;
+                padding: 0 40px;
+                justify-content: space-between;
+                margin-top: 40px;
+                &.only {
+                    justify-content: space-around;
+                }
+                .effect-item {
+                    width: 56px;
+                    align-items: center;
+                    flex-direction: column;
+                    font-size: 28px;
+                    color: $color-333;
+                    line-height: 1;
+                    font-weight: bold;
+                    &.disable {
+                        color: #ccc;
+                        font-weight: normal;
+                    }
+                    .effect-icon {
+                        width: 48px;
+                        height: 48px;
+                        background-size: 100% 100%;
+                        &.active {
+                            background-image: url("#{$ossHost}effect.png");
+                        }
+                        &.un-effect {
+                            background-image: url("#{$ossHost}uneffect.png");
+                        }
+                        background-image: url("#{$ossHost}effect_disable.png");
+                        margin-bottom: 32px;
+                        &.disable {
+                            transform: rotateX(180deg);
+                        }
+                    }
+                }
+            }
+        }
+        .item-top {
+            align-items: center;
+            font-size: 32px;
+            color: $color-333;
+            font-weight: bold;
+            line-height: 1;
+            .top-icon {
+                width: 24px;
+                height: 24px;
+                background-size: 100% 100%;
+                background-image: url("#{$ossHost}drug_detail_1.png");
+                margin-right: 8px;
+                &.icon-2 {
+                    background-image: url("#{$ossHost}drug_detail_2.png");
+                }
+                &.icon-3 {
+                    background-image: url("#{$ossHost}drug_detail_3.png");
+                }
+                &.icon-4 {
+                    background-image: url("#{$ossHost}drug_detail_4.png");
+                }
+                &.icon-5 {
+                    background-image: url("#{$ossHost}drug_detail_5.png");
+                }
+                &.icon-6 {
+                    background-image: url("#{$ossHost}drug_detail_6.png");
+                }
+                &.icon-7 {
+                    background-image: url("#{$ossHost}drug_detail_7.png");
+                }
+            }
+        }
+        .item-desc {
+            width: 100%;
+            padding-left: 32px;
+            font-size: 28px;
+            color: $color-999;
+            line-height: 42px;
+            margin-top: 16px;
+            margin-bottom: 32px;
+            &.no-border {
+                margin-bottom: 0;
+            }
+        }
+        .top-title {
+            font-size: 30px;
+            font-weight: bold;
+            color: $color-333;
+            line-height: 1;
+            margin-bottom: 28px;
+        }
+        .top-bottom {
+            align-items: center;
+            .dep {
+                padding: 8px 24px;
+                line-height: 1;
+                border-radius: 22px;
+                border: 1px solid #ff775d;
+                align-items: center;
+                justify-content: space-around;
+                font-size: 24px;
+                color: #ff775d;
+                margin-right: 24px;
+            }
+            .medical-insurance {
+                width: 144px;
+                height: 40px;
+                background: rgba(39, 224, 205, 0.1);
+                border-radius: 12px;
+                font-size: 24px;
+                color: #27e0cd;
+                align-items: center;
+                justify-content: space-around;
+            }
+        }
+    }
+}

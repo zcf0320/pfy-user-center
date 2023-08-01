@@ -1,0 +1,50 @@
+.prescription-upload-page {
+  height: 100%;
+  background: #f2f6fa;
+  padding: 32px 32px 200px;
+  .img-list {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+
+    .img-card {
+      width: 196px;
+      height: 248px;
+      margin-right: 16px;
+      margin-bottom: 16px;
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+      &-item {
+        width: 196px;
+        height: 248px;
+        border-radius: 8px;
+      }
+    }
+  }
+  .upload-img {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 166px;
+    background: #ffffff;
+    box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.05);
+    padding: 20px 32px;
+    &-btn {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+      box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+      border-radius: 40px;
+      font-size: 28px;
+      font-weight: 400;
+      color: #ffffff;
+    }
+  }
+}

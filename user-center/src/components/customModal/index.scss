@@ -1,0 +1,86 @@
+.custom-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: 100% 100%;
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  .custom-modal-content {
+    width: 608px;
+    background: #fff;
+    border-radius: 12px;
+    transition: all 0.3s;
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+    &.show {
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+    .title {
+      width: 608px;
+      height: 92px;
+      border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+      align-items: center;
+      justify-content: space-around;
+      font-weight: bold;
+      text-align: center;
+      font-size: 36px;
+      color: $color-333;
+    }
+    .modal-content {
+      background: $white;
+      flex-direction: column;
+      align-items: center;
+      padding: 32px;
+      // padding-top: 32px;
+      border-radius: 0 0 12px 12px;
+      .content-text {
+        font-size: 32px;
+        line-height: 48px;
+        color: $color-333;
+        text-align: center;
+        overflow: hidden;
+        word-break: break-all;
+      }
+      .sub-title-text {
+        margin-top: 28px;
+        color: #febd44;
+        font-size: 24px;
+      }
+      .action-list {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 48px;
+        &.around {
+          justify-content: space-around;
+        }
+        .action-item {
+          align-items: center;
+          justify-content: space-around;
+          color: #fff;
+          font-size: 28px;
+          width: 224px;
+          height: 80px;
+          border-radius: 40px;
+
+          font-weight: bold;
+          &.cancel {
+            background: linear-gradient(180deg, #e9e5e5 0%, #cccccc 100%);
+            box-shadow: 0px 6px 20px 0px rgba(204, 204, 204, 0.2);
+          }
+          &.confirm {
+            background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+            box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.page-all {
+  width: 100%;
+  min-height: 100%;
+  background: #fff;
+  padding: 32px;
+  .page-title {
+    text-align: center;
+    font-size: 28px;
+    color: $color-666;
+    font-weight: bold;
+  }
+  .common-text {
+    font-size: 28px;
+    color: $color-666;
+    line-height: 40px;
+  }
+  .sub-title {
+    font-size: 28px;
+    color: $color-666;
+    font-weight: bold;
+  }
+  .m-t-32 {
+    margin-top: 32px;
+  }
+}

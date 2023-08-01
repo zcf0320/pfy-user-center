@@ -1,0 +1,106 @@
+.page-plan-detail {
+    width: 100%;
+    min-height: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 200px;
+    align-items: center;
+    .m-t-32 {
+        margin-top: 32px;
+    }
+
+    .line {
+        width: 100%;
+        height: 32px;
+        background: #f6f6f6;
+    }
+    .add-plan {
+        position: fixed;
+        right: 48px;
+        bottom: 64px;
+        width: 296px;
+        height: 88px;
+        background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+        box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+        border-radius: 44px;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 32px;
+        color: $white;
+    }
+    .del-plan {
+        position: fixed;
+        left: 48px;
+        bottom: 64px;
+        width: 296px;
+        height: 88px;
+        border: 1px solid #ff775d;
+        border-radius: 44px;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 32px;
+        color: #ff775d;
+    }
+    .item {
+        width: 100%;
+        padding: 32px;
+        padding-bottom: 0;
+        background: $white;
+        .item-title {
+            font-size: 32px;
+            color: $color-333;
+            line-height: 1;
+            font-weight: bold;
+            .icon-1 {
+                width: 32px;
+                height: 32px;
+                background-image: url("#{$ossHost}what_drug.png");
+                background-size: 100% 100%;
+                margin-right: 16px;
+                &.icon-2 {
+                    background-image: url("#{$ossHost}when_drug.png");
+                }
+                &.icon-3 {
+                    background-image: url("#{$ossHost}tips_drug.png");
+                }
+            }
+        }
+        .list {
+            width: 100%;
+            border-bottom: 1px solid rgba(204, 204, 204, 0.49);
+        }
+        .item-content {
+            width: 100%;
+            justify-content: space-between;
+            font-size: 28px;
+            color: $color-999;
+            line-height: 1;
+            margin-bottom: 32px;
+            .text {
+                margin-top: 24px;
+            }
+            .custom {
+                font-size: 28px;
+                margin-left: 32px;
+                color: $color-999;
+            }
+            .time-list {
+                width: 450px;
+                font-size: 28px;
+                color: $color-999;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                .time-item {
+                    margin-top: 24px;
+                    margin-left: 32px;
+                }
+            }
+            .every {
+                margin-left: 32px;
+            }
+        }
+        .m-b-0 {
+            margin-bottom: 0px;
+        }
+    }
+}

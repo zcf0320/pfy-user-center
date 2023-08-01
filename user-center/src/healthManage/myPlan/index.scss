@@ -1,0 +1,102 @@
+.page-my-plan {
+  width: 100%;
+  height: 100%;
+  background: $white;
+  flex-direction: column;
+  .plan-tab {
+    width: 100%;
+    height: 96px;
+    padding: 0 128px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0px 4px 8px 0px rgba(68, 96, 225, 0.1);
+    .tab-item {
+      width: 192px;
+      height: 100%;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 32px;
+      color: $color-999;
+      &.active {
+        color: $color-333;
+        font-weight: bold;
+      }
+    }
+    .line {
+      width: 44px;
+      height: 8px;
+      background: linear-gradient(90deg, #ef7064 0%, #db4d40 100%);
+      border-radius: 4px;
+      position: absolute;
+      left: 194px;
+      bottom: 12px;
+      &.line-1 {
+        left: 514px;
+      }
+    }
+  }
+  .plan-list {
+    flex: 1;
+    overflow: scroll;
+    .empty-box {
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      .empty-box-content {
+        color: #999;
+        font-size: 28px;
+        align-items: center;
+        flex-direction: column;
+        .img {
+          width: 522px;
+          height: 334px;
+          margin-bottom: 48px;
+          background: url("#{$ossHost}none_data.png");
+          background-size: 100% 100%;
+        }
+      }
+    }
+
+    .plan-item {
+      height: 152px;
+      background: #ffffff;
+      box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+      border-radius: 12px;
+      margin: 32px;
+      padding: 32px;
+      justify-content: space-between;
+      align-items: center;
+      .left {
+        flex: 1;
+        margin-right: 20px;
+        .left-title {
+          font-size: 32px;
+          color: $color-333;
+          font-weight: bold;
+        }
+        .left-sub-title {
+          width: 336px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-size: 24px;
+          color: $color-999;
+          margin-top: 32px;
+        }
+      }
+      .right {
+        width: 144px;
+        height: 48px;
+        background: linear-gradient(90deg, #ef7064 0%, #db4d40 100%);
+        border-radius: 36px;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 24px;
+        color: #fff;
+      }
+    }
+  }
+}

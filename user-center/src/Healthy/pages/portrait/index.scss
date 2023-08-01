@@ -1,0 +1,83 @@
+.page-portrait {
+  width: 100%;
+
+  background: $white;
+  padding: 0 32px;
+  align-items: center;
+  padding-bottom: 152px;
+  .portratit-title {
+    font-size: 36px;
+    color: $color-333;
+    margin-top: 32px;
+    font-weight: bold;
+  }
+  .limit {
+    font-size: 28px;
+    margin-top: 32px;
+    color: $color-999;
+  }
+  .tag-list {
+    width: 100%;
+    height: auto;
+    margin-top: 64px;
+    flex-wrap: wrap;
+    .tag-item {
+      background: #f2f2f2;
+      border-radius: 8px;
+      padding: 20px;
+      background: #f2f2f2;
+      border-radius: 8px;
+      font-size: 28px;
+      color: $color-333;
+      margin-right: 48px;
+      margin-bottom: 32px;
+      white-space: nowrap;
+      line-height: 1;
+      align-items: center;
+      .add-icon {
+        width: 28px;
+        height: 28px;
+        background-image: url("#{$ossHost}add_tag.png");
+        background-size: 100% 100%;
+        margin-right: 16px;
+      }
+      &.select {
+        color: $white;
+        background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+        box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+        .add-icon {
+          background-image: url("#{$ossHost}select_tag.png");
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+  .tips {
+    position: fixed;
+    bottom: 184px;
+    left: 94px;
+    font-size: 28px;
+    color: $color-999;
+    .go {
+      color: #ff5a47;
+    }
+  }
+  .bottom {
+    position: fixed;
+    bottom: 64px;
+    left: 154px;
+    align-items: center;
+    justify-content: space-around;
+    width: 440px;
+    height: 88px;
+    background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+    box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+    border-radius: 44px;
+    font-size: 32px;
+    color: $white;
+    &.disable {
+      background: linear-gradient(180deg, #e9e5e5 0%, #cccccc 100%);
+      box-shadow: 0px 6px 20px 0px rgba(204, 204, 204, 0.2);
+    }
+  }
+}

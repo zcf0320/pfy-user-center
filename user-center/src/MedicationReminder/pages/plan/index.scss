@@ -1,0 +1,163 @@
+.page-plan {
+  width: 100%;
+  min-height: 100%;
+  background: #f6f6f6;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 200px;
+  align-items: center;
+  &.none {
+    height: 100%;
+    padding-bottom: 0;
+  }
+  .empty {
+    width: 100%;
+    height: 100%;
+    background: $white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .empty-content {
+      flex-direction: column;
+      font-size: 32px;
+      color: $color-333;
+      align-items: center;
+    }
+    .empty-bg {
+      width: 450px;
+      height: 386px;
+      background-image: url("#{$ossHost}medication_none.png");
+      background-size: 100% 100%;
+      margin-bottom: 64px;
+    }
+  }
+  .add-plan {
+    position: fixed;
+    left: 156px;
+    bottom: 64px;
+    width: 440px;
+    height: 88px;
+    background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+    box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+    border-radius: 44px;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 32px;
+    color: $white;
+    z-index: 10;
+  }
+  .plan-item {
+    width: 686px;
+    background: #ffffff;
+    box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+    border-radius: 12px;
+    padding: 0 32px;
+    position: relative;
+    margin-top: 32px;
+    .status {
+      width: 104px;
+      height: 36px;
+      background-image: url("#{$ossHost}medication_status_2.png");
+      background-size: 100% 100%;
+      position: absolute;
+      right: 0;
+      top: 32px;
+      &.en {
+        background-image: url("#{$ossHost}medication_status_2-en.png");
+      }
+      &.status-2 {
+        background-image: url("#{$ossHost}medication_status_1.png");
+        &.en {
+          background-image: url("#{$ossHost}medication_status_1-en.png");
+        }
+      }
+      &.status-3 {
+        background-image: url("#{$ossHost}medication_status_3.png");
+        &.en {
+          background-image: url("#{$ossHost}medication_status_3-en.png");
+        }
+      }
+    }
+    .plan-item-top {
+      width: 100%;
+      border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+      padding: 32px 0;
+      .date {
+        font-size: 28px;
+        line-height: 1;
+        color: $color-333;
+      }
+      .date-dot {
+        justify-content: flex-start;
+        .date-title {
+          margin-top: 24px;
+          font-size: 28px;
+          line-height: 1;
+          color: $color-333;
+        }
+        .dot-list {
+          flex-wrap: wrap;
+          .dot-item {
+            margin-right: 32px;
+            font-size: 28px;
+            margin-top: 24px;
+            font-weight: normal;
+            color: #8790bb;
+            line-height: 1;
+            &:nth-child(4n) {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+    .plan-item-center {
+      padding: 32px 0;
+      .medication-list {
+        .medication-item {
+          margin-top: 24px;
+          &:nth-child(1) {
+            margin-top: 0;
+          }
+          .name {
+            font-size: 24px;
+            color: $color-999;
+            line-height: 1;
+          }
+          .tag {
+            font-size: 24px;
+            color: $color-999;
+            line-height: 1;
+            margin-top: 16px;
+          }
+        }
+      }
+    }
+    .plan-item-bottom {
+      width: 100%;
+      height: 88px;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid rgba(204, 204, 204, 0.5);
+      .left {
+        font-size: 24px;
+        line-height: 1;
+        color: $color-666;
+      }
+      .right {
+        font-size: 24px;
+        line-height: 1;
+        color: $color-666;
+        align-items: center;
+        .next {
+          width: 32px;
+          height: 32px;
+          background-image: url("#{$ossHost}next.png");
+          background-size: 100% 100%;
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}

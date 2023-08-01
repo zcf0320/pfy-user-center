@@ -1,0 +1,199 @@
+.lifeInfo {
+  width: 100%;
+  .head {
+    width: 100%;
+    height: 72px;
+    background: rgba(254, 154, 81, 0.1);
+    color: #fe9a51;
+    line-height: 72px;
+    padding-left: 32px;
+  }
+  .card {
+    width: 686px;
+    height: 594px;
+    background: #ffffff;
+    box-shadow: 0px 6px 20px 0px rgba(217, 217, 217, 0.4);
+    border-radius: 12px;
+    padding-top: 34px;
+    position: relative;
+    margin: 32px 0;
+    .height {
+      position: absolute;
+      top: 112px;
+      left: 16px;
+    }
+    .weight {
+      position: absolute;
+      top: 112px;
+      right: 16px;
+      text-align: right;
+    }
+    .blood {
+      position: absolute;
+      top: 112px;
+      left: 16px;
+    }
+    .disaster {
+      position: absolute;
+      top: 112px;
+      right: 16px;
+      text-align: right;
+    }
+    .overflow {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 140px;
+    }
+    .peroson {
+      background: url("#{$ossHost}images/life-info.png");
+      background-size: 100% 100%;
+      width: 144px;
+      height: 320px;
+      position: absolute;
+      top: 76px;
+      left: 50%;
+      z-index: 2;
+      transform: translate(-50%, 0);
+    }
+    .top,
+    .bottom {
+      justify-content: center;
+      align-items: flex-start;
+      .box {
+        width: 202px;
+        height: 202px;
+        position: relative;
+      }
+      .green {
+        background: #27e0cd;
+      }
+      .pink {
+        background: rgba(233, 76, 64, 0.2);
+      }
+    }
+    .line {
+      width: 4px;
+      height: 202px;
+      background: #ffffff;
+    }
+    .top {
+      padding-bottom: 4px;
+    }
+  }
+  .pd32 {
+    padding: 0 32px;
+  }
+  .flex {
+    display: flex;
+  }
+  .fs24 {
+    font-size: 24px;
+  }
+  .fs28 {
+    font-size: 28px;
+  }
+  .mb12 {
+    margin-bottom: 6px;
+  }
+  .white {
+    color: #ffffff;
+  }
+  .info {
+    width: 686px;
+    height: 340px;
+    background: #fff;
+    box-shadow: 0px 6px 20px 0px rgba(217, 217, 217, 0.4);
+    border-radius: 12px;
+    padding-top: 32px;
+  }
+  .item-info {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    .label {
+      justify-content: flex-start;
+      align-items: center;
+      text-align: left;
+      .star {
+        background: url("#{$ossHost}images/must.png");
+        background-size: 100% 100%;
+        width: 10px;
+        height: 8px;
+      }
+      .bg {
+        width: 48px;
+        height: 48px;
+      }
+      .tem {
+        background: url("#{$ossHost}images/life-tem.png");
+        background-size: 100%;
+        margin-right: 24px;
+      }
+      .breath {
+        background: url("#{$ossHost}images/life-breath.png");
+        background-size: 100%;
+      }
+      .heart {
+        background: url("#{$ossHost}images/life-heart.png");
+        background-size: 100%;
+      }
+      .temperature {
+        margin-left: 24px;
+      }
+    }
+    .input {
+      font-size: 28px;
+      color: #cccccc;
+      margin-top: 5px;
+      text-align: right;
+      width: 280px;
+      height: 100%;
+    }
+  }
+  .dividing {
+    width: 622px;
+    height: 1px;
+    background: rgba(204, 204, 204, 0.5);
+    margin: 32px auto;
+  }
+  .pressure {
+    background: #fff;
+    box-shadow: 0px 6px 20px 0px rgba(217, 217, 217, 0.4);
+    border-radius: 12px;
+    padding: 24px 0 34px;
+    margin-top: 32px;
+    margin-bottom: 64px;
+    .preIcon {
+      width: 48px;
+      height: 48px;
+      background: url("#{$ossHost}images/life-pressure.png");
+      background-size: 100%;
+      margin-left: 32px;
+      margin-right: 24px;
+    }
+    .title {
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 34px;
+    }
+  }
+  .btn {
+    width: 686px;
+    height: 88px;
+    border-radius: 44px;
+    margin: 32px 0 64px;
+    font-size: 32px;
+  }
+  .active {
+    background: linear-gradient(180deg, #ffca89 0%, #fe9a51 100%);
+  }
+  .disabled {
+    background: #cccccc !important;
+    opacity: 0.29;
+    color: #999999;
+  }
+  .steps-date {
+    margin: 32px 24px 0;
+  }
+}

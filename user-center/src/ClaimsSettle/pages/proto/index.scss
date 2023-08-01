@@ -1,0 +1,77 @@
+.page-proto {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  padding: 32px;
+  -webkit-overflow-scrolling: touch;
+  .tips {
+    color: #febd44;
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 32px;
+  }
+  .sb {
+    font-size: 28px;
+
+    font-weight: 500;
+    color: #666666;
+    line-height: 40px;
+  }
+  .sign {
+    font-size: 28px;
+    color: $color-333;
+    font-weight: bold;
+    line-height: 40px;
+    .sign-img {
+      width: 160px;
+      height: 160px;
+      background: #ffffff;
+      border-radius: 12px;
+      border: 1px solid #cccccc;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 24px;
+      color: #ccc;
+      font-weight: normal;
+      margin-left: 16px;
+    }
+  }
+  .agree {
+    width: 440px;
+    height: 88px;
+    background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+    box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+    border-radius: 44px;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 32px;
+    color: $white;
+    margin: 48px auto 64px;
+    &.disable {
+      background: linear-gradient(180deg, #e9e5e5 0%, #cccccc 100%);
+      box-shadow: 0px 6px 20px 0px rgba(204, 204, 204, 0.2);
+    }
+  }
+  .img-wrap {
+    position: relative;
+    width: 100%;
+    padding-bottom: 64px;
+    box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+    // height: 100%;
+    .img-item {
+      position: relative;
+      width: 100%;
+      margin-bottom: 32px;
+      // height: 100%;
+      // width: 458px;
+    }
+    .page-code {
+      position: absolute;
+      bottom: 32px;
+      left: 50%;
+      font-size: 28px;
+      font-weight: 500;
+      color: #666666;
+    }
+  }
+}

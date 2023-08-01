@@ -1,0 +1,208 @@
+@import '@styles/theme.scss';
+.page-detail{
+    width: 100%;
+    height: 100%; 
+    background: #F6F6F6;
+    flex-direction: column;
+    .content{
+        flex: 1;
+        overflow: scroll;
+        .top{
+            width: 100%;
+            // height: 720px;
+            height: auto;
+            background: #F6F6F6;
+        }
+        .name{
+            width: 100%;
+            height: 104px;
+            background: #FFFFFF;
+            font-size: 40px;
+            align-items: center;
+            color: $color-666;
+            padding: 0 32px;
+            font-weight: bold;
+            margin: 20px 0;
+            box-shadow: 0px 4px 8px 0px rgba(204,204,204,0.15), 0px -1px 0px 0px rgba(204,204,204,0.5);
+        }
+        .product-tab{
+            width: 100%;
+            height: 92px;
+            background: $white;
+            margin: 32px 0;
+            .product-item{
+                flex: 1;
+                height: 100%;
+                align-items: center;
+                justify-content: space-around;
+                .text{
+                    width: 128px;
+                    height: 100%;
+                    font-size: 28px;
+                    color: $color-999;
+                    align-items: center;
+                    justify-content: space-around;
+                    &.active{
+                        border-bottom: 4px solid #FEBD44;
+                        color: #FEBD44;
+                    }
+                }
+            }
+        }
+        .detail{
+            padding: 32px 0;
+            background: $white;
+            height: auto;
+            // height: 746px;
+            // align-content: center;
+            // justify-content: space-around;
+            flex-direction: column;
+            p{
+                font-size: 24px !important;
+            }
+        }
+        .plan{
+            background: $white;
+            .plan-select{
+                width: 100%;
+                overflow: scroll;
+                padding-left: 32px;
+                // height: 152px;
+                // align-items: center;
+                // justify-content: space-around;
+            }
+            .common{
+                width: 100%;
+                height: 104px;
+                padding: 0 32px;
+                align-items: center;
+                color: $color-666;
+                font-size: 28px;
+                justify-content: space-between;
+                border-bottom: 1px solid rgba(204,204,204,0.5);
+                .plan-detail{
+                    font-size: 24px;
+                    color: #FEBD44;
+                }
+                &.title{
+                    color: $color-333;
+                    font-size: 32px;
+                    font-weight: bold;
+                    height: 80px;
+                }
+                &.money{
+                    .label{
+                        color: $color-999;
+                    }
+                    .text{
+                        color: $color-666;
+                        font-size: 36px;
+                        font-weight: bold;
+                    }
+                }
+                .label{
+                    width: 240px;
+                    font-size: 28px;
+                }
+                .text{
+                    width: 420px;
+                    font-size: 28px;
+                    text-align: right;
+                    .query-job{
+                        color: #FEBD44;
+                        font-size: 24px;
+                        margin-left: 32px;
+                    }
+                }
+                .right{
+                    align-items: center;
+                    .service-info{
+                        width: 372px;
+                        color: $color-666;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        word-break: break-all;
+                        font-size: 28px;
+                        text-align: right;
+                    }
+                    .next{
+                        width: 32px;
+                        height: 32px;
+                        margin-left: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .footer-content{
+        width: 100%;
+        height: auto;
+        .footer-notify{
+            width: 100%;
+            height: 100px;
+            padding: 0 32px;
+            align-items: center;
+            background: #fff;
+            font-size: 24px;
+            border-top: 1px solid rgba(197, 197, 197, 0.25);
+            .select{
+                align-items: center;
+                justify-content: space-around;
+                border: 1px solid $color-main-yellow;
+                border-radius: 50%;
+                width: 24px;
+                height: 24px;
+                margin-right: 12px;
+                &.active{
+                    background: $color-main-yellow;
+                }
+                .icon-select{
+                    width: 16px;
+                    height: 12px;
+                    
+                }
+            }
+            .link{
+                font-size: 24px;
+                color: #FEBD44;
+            }
+        }
+    }
+    .footer{
+        width: 100%;
+        height: 100px;
+        background: $white;
+        box-shadow: 0px -4px 8px 0px rgba(204,204,204,0.5);
+        .footer-left{
+            width: 62%;
+            height: 100%;
+            align-items: center;
+            padding-left: 46px;
+            .money{
+                font-size: 36px;
+                color: #E94C40;
+                font-weight: bold;
+            }
+            .union{
+                font-size: 28px;
+                color: $color-333;
+                font-weight: bold;
+            }
+        }
+        .footer-right{
+            width: 38%;
+            height: 100%;
+            background: #FF775D;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 32px;
+            font-weight: bold;
+            color: $white;
+            &.disable{
+                background: #EFEFEF;
+                color: $color-999;
+            }
+        }
+    }
+}

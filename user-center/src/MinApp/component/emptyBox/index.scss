@@ -1,0 +1,39 @@
+.component-empty-box {
+  font-size: 28px;
+  color: #999;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  &.none {
+    color: $color-333;
+  }
+  .empty-icon {
+    width: 522px;
+    height: 334px;
+    margin-bottom: 48px;
+    display: block;
+  }
+  .empty-drug {
+    width: 450px;
+    height: 376px;
+    margin: 208px 0 64px;
+    display: block;
+  }
+  .go-btn {
+    width: 440px;
+    height: 88px;
+    background: linear-gradient(142deg, #7bb4f5 0%, #467de8 100%);
+    border-radius: 44px;
+    font-size: 32px;
+
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 88px;
+    text-align: center;
+    position: fixed;
+    bottom: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

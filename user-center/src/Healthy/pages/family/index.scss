@@ -1,0 +1,415 @@
+.family {
+  position: relative;
+  height: 100%;
+  background: #f2f6fa;
+  padding-bottom: 32px;
+  .family-header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background: url("#{$ossHost}family-top-header.png") no-repeat;
+    background-size: 100% 100%;
+    font-size: 32px;
+    font-weight: 500;
+    color: #fff;
+    z-index: 90;
+    padding: 0 32px;
+    .family-header-left {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  .family-main {
+    width: 100%;
+    height: 564px;
+    background: url("#{$ossHost}family-main-header.png") no-repeat;
+    background-size: 100% 100%;
+
+    position: relative;
+    .family-main-content {
+      position: absolute;
+      left: 32px;
+      right: 32px;
+      bottom: -32px;
+      height: 364px;
+      background: url("#{$ossHost}family-main-content.png") no-repeat;
+      background-size: 100% 100%;
+      padding: 32px 0 32px 32px;
+    }
+    .family-main-bottom-content {
+      width: 100%;
+
+      .family-main-bottom-title {
+        width: 228px;
+        height: 56px;
+        background: linear-gradient(102deg, #96c0ff 0%, #6baeff 45%, #75afff 100%);
+        box-shadow: inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+        border-radius: 28px;
+        font-size: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+        color: #ffffff;
+      }
+      .family-main-content-list {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .family-main-list {
+        flex: 2;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+
+        .family-content-list {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          margin-right: 32px;
+
+          position: relative;
+          .family-avatar {
+            margin-top: 10px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+          }
+          .family-list-cancel {
+            width: 32px;
+            height: 32px;
+            position: absolute;
+            top: 0;
+            right: -15px;
+          }
+          .family-name {
+            font-size: 28px;
+            font-weight: 400;
+            color: #666666;
+            margin: 24px 0 32px 0;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+          &.active {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 32px;
+
+            .family-avatar {
+              margin-top: 0;
+              width: 120px;
+              height: 120px;
+              border-radius: 50%;
+            }
+            .family-name {
+              font-size: 32px;
+              font-weight: 600;
+              color: #333333;
+              margin: 10px 0 24px 0;
+
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+            }
+          }
+        }
+        .family-bottom-list {
+          width: 68px;
+          height: 8px;
+          background: #ff5d50;
+          border-radius: 4px;
+          margin: 0 auto;
+        }
+      }
+      .family-main-add {
+        margin-top: 10px;
+        padding-left: 8px;
+        padding-right: 24px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        .family-add {
+          width: 96px;
+          height: 96px;
+        }
+        .family-text {
+          width: fit-content;
+          display: flex;
+          align-items: baseline;
+          justify-content: center;
+        }
+        .family-add-text {
+          font-size: 28px;
+          font-weight: 400;
+          color: #666666;
+          margin: 24px 0 32px 0;
+        }
+        .family-add-number {
+          font-size: 20px;
+        }
+      }
+      .family-main-list::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}
+
+.family-mack {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: 100% 100%;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 500;
+  padding: 0 64px;
+  .family-mack-content {
+    height: 452px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 32px;
+    .family-title {
+      font-size: 32px;
+      font-weight: 600;
+      color: #333333;
+      line-height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 64px;
+    }
+    .family-text {
+      font-size: 32px;
+      font-weight: 400;
+      color: #666666;
+      line-height: 44px;
+    }
+    .mb-32 {
+      margin-bottom: 32px;
+    }
+    .mb-84 {
+      margin-bottom: 84px;
+    }
+    .family-btn {
+      height: 80px;
+      background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+      box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+      border-radius: 40px;
+      font-size: 28px;
+      font-weight: 400;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .family-cancel {
+      width: 48px;
+      height: 48px;
+      position: absolute;
+      top: -80px;
+      right: -20px;
+    }
+  }
+}
+.family-add-mack {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: 100% 100%;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 500;
+  padding: 0 64px;
+  .family-content {
+    height: 344px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+    flex-direction: column;
+    padding: 32px;
+    position: relative;
+    .family-content-title-top {
+      font-size: 28px;
+      font-weight: 600;
+      color: #333333;
+      line-height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // margin-bottom: 88px;
+      margin-top: 64px;
+    }
+    .family-content-title-bottom {
+      font-size: 28px;
+      font-weight: 600;
+      color: #333333;
+      line-height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 38px;
+      margin-top: 32px;
+    }
+    .family-btn {
+      height: 80px;
+      background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+      box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+      border-radius: 40px;
+      font-size: 28px;
+      font-weight: 400;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .family-cancel {
+      width: 48px;
+      height: 48px;
+      position: absolute;
+      top: -80px;
+      right: -20px;
+    }
+  }
+}
+.family-unbinding-mack {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: 100% 100%;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 500;
+  padding: 0 64px;
+  .family-content {
+    height: 304px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+    flex-direction: column;
+    padding: 0 48px;
+    .family-content-title {
+      font-size: 32px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 72px 0;
+      // margin-top: 72px;
+    }
+    .family-btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 32px;
+      .family-btn-left {
+        width: 224px;
+        height: 80px;
+        background: linear-gradient(180deg, #e9e5e5 0%, #cccccc 100%);
+        box-shadow: 0px 6px 20px 0px rgba(204, 204, 204, 0.2);
+        border-radius: 40px;
+        font-size: 28px;
+        font-weight: 500;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .family-btn-right {
+        width: 224px;
+        height: 80px;
+        background: linear-gradient(102deg, #f87a56 0%, #ff5d50 43%, #ff5d50 100%);
+        box-shadow: 0px 4px 12px 0px rgba(241, 83, 83, 0.5), inset -8px 10px 14px 0px rgba(255, 255, 255, 0.21);
+        border-radius: 40px;
+        font-size: 28px;
+        font-weight: 500;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+.family-footer {
+  position: absolute;
+  margin-top: -8px;
+  width: 100%;
+  padding: 0 32px;
+  z-index: 2;
+  .family-footer-content {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    .family-footer-img {
+      padding: 152px 48px;
+      // display: flex;
+      // align-items: center;
+      // flex-direction: column;
+      // justify-content: center;
+      .family-nodata {
+        width: 100%;
+        height: 466px;
+      }
+      .family-nodata-text {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 400;
+        color: #999999;
+
+        margin-top: 48px;
+      }
+    }
+
+    .family-list {
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+  }
+}

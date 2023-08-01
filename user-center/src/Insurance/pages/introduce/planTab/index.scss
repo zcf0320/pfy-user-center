@@ -1,0 +1,42 @@
+@import '@styles/theme.scss';
+@import '../../../../app.scss';
+.component-tab{
+    width: 686px;
+    height: 88px;
+    background: #FFFFFF;
+    margin: 32px 0;
+    &.two{
+        border-radius: 8px;
+        .tab-item{
+            flex: 1;
+            margin: 0;
+            &:nth-child(1){
+                border-radius: 8px 0px 0px 8px;
+            }
+            &:nth-child(2){
+                border-radius: 0px 8px 8px 0px;
+            }
+        }
+    }
+    .tab-item{
+        // flex: 1;
+        width: 230px;
+        height: 100%;
+        border: 2px solid #FEBD44;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 29px;
+        color: #FEBD44;
+        flex-shrink: 0;
+        border-radius: 8px;
+        margin-left: 32px;
+        &:nth-child(1){
+            // border: none;
+            margin-left: 0;
+        }
+        &.active{
+            color: $white;
+            background: #FEBD44;
+        }
+    }
+}

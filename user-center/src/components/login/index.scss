@@ -1,0 +1,139 @@
+.component-login {
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 51, 51, 0.49);
+  position: absolute;
+  left: 0;
+  top: 0;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 96px;
+  z-index: 500;
+  .modal {
+    width: 622px;
+    height: 456px;
+    background: #fffefe;
+    border-radius: 12px;
+    align-items: center;
+    flex-direction: column;
+    padding: 32px;
+  }
+  .login-modal {
+    width: 622px;
+    // height: 456px;
+    background: #fffefe;
+    border-radius: 12px;
+    align-items: center;
+    flex-direction: column;
+    padding: 64px 30px;
+    .login-title {
+      font-weight: bold;
+      font-size: 32px;
+      color: #333;
+      font-weight: bold;
+      margin-bottom: 64px;
+      line-height: 32px;
+    }
+    .common-item {
+      width: 558px;
+      height: 88px;
+      border-bottom: 1px solid rgba(228, 232, 232, 1);
+      padding: 0 32px;
+      .input {
+        width: 100%;
+        height: 100%;
+        font-size: 28px;
+        color: $color-333;
+      }
+    }
+    .confirm {
+      width: 422px;
+      height: 88px;
+      border-radius: 44px;
+      font-size: 32px;
+      align-items: center;
+      justify-content: space-around;
+      color: #fff;
+      background: $color-main-yellow;
+      margin-top: 32px;
+      &.disable {
+        background: rgba(204, 204, 204, 0.23);
+        color: $color-999;
+      }
+    }
+    .item {
+      align-items: center;
+      justify-content: space-between;
+      width: 558px;
+      height: 88px;
+      border-bottom: 1px solid #e4e8e8;
+      padding: 0 32px 0 24px;
+      box-sizing: border-box;
+      &.no-border {
+        border: none;
+        padding-left: 0;
+        padding: 0;
+      }
+      .left {
+        align-items: center;
+        height: 100%;
+        &.code {
+          width: 370px;
+          border-bottom: 1px solid #e4e8e8;
+          padding: 0 24px;
+          box-sizing: border-box;
+        }
+        .label {
+          width: 24px;
+          height: 24px;
+          margin-right: 32px;
+        }
+        .input {
+          width: 336px;
+          height: 100%;
+          font-size: 28px;
+        }
+      }
+      .right {
+        width: 30px;
+        height: 30px;
+      }
+      .send-message {
+        width: 156px;
+        height: 48px;
+        color: $color-main-yellow;
+        border-radius: 24px;
+        text-align: center;
+        line-height: 46px;
+        font-size: 24px;
+        background: $white;
+        border: 1px solid $color-main-yellow;
+        &.disable {
+          color: $btn-disable;
+          border: 1px solid $btn-disable;
+        }
+      }
+    }
+    .login {
+      width: 422px;
+      height: 88px;
+      border-radius: 44px;
+      font-size: 32px;
+      align-items: center;
+      justify-content: space-around;
+      background: linear-gradient(90deg, #ef7064 0%, #db4d40 100%);
+      color: $white;
+      margin-top: 32px;
+      &.disable {
+        background: linear-gradient(180deg, #e9e5e5 0%, #cccccc 100%);
+        box-shadow: 0px 6px 20px 0px rgba(204, 204, 204, 0.2);
+        color: #fff;
+      }
+    }
+  }
+  .health_cancel {
+    width: 52px;
+    height: 52px;
+    margin: 64px auto 0;
+  }
+}

@@ -1,0 +1,25 @@
+.claims-step3 {
+  min-height: 100%;
+  background: #f6f6f6;
+  padding-top: 32px;
+  &-box {
+    width: 686px;
+    background: #ffffff;
+    box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+    border-radius: 12px;
+    margin: 0 auto 32px;
+    padding: 0 32px;
+  }
+  &-more {
+    width: 686px;
+    height: 92px;
+    font-size: 28px;
+    color: #febd44;
+    background: #fff;
+    text-align: center;
+    line-height: 92px;
+    margin: 32px auto 64px;
+    box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+    border-radius: 12px;
+  }
+}

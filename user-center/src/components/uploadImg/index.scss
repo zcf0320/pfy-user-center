@@ -1,0 +1,36 @@
+.claims-upload {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  &-box {
+    width: 176px;
+    height: 176px;
+    border-radius: 8px;
+    border: 1px dashed #ccc;
+    margin: 0 31px 32px 0;
+    position: relative;
+  }
+  &-add {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &-delete {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: -12px;
+    top: -12px;
+  }
+  &-img {
+    width: 176px;
+    height: 176px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

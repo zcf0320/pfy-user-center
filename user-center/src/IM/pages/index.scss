@@ -1,0 +1,131 @@
+.im-page {
+  width: 100%;
+  // height: 100%;
+  background: #f2f6fa;
+
+  .tips {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fffbfa;
+    box-shadow: 0px 4px 8px 0px rgba(253, 126, 106, 0.02);
+    opacity: 0.86;
+    backdrop-filter: blur(3px);
+    color: #fa7455;
+    font-size: 22px;
+    z-index: 10;
+    &-img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .show-coin {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: #fa7455;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    z-index: 111;
+    &.weapp {
+      top: 90px;
+    }
+    .coin-img {
+      width: 46px;
+      height: 46px;
+      margin-right: 8px;
+    }
+  }
+  .container {
+    margin-top: 32px;
+    padding-top: 32px;
+  }
+
+  .im-input-content {
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+    height: 166px;
+    background: #ffffff;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .send {
+      width: 92px;
+      height: 60px;
+      background: #db4d40;
+      border-radius: 8px;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 24px;
+      color: $white;
+    }
+    .input {
+      width: 498px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+      background: #f4f4f4;
+      border-radius: 32px;
+      padding: 18px 48px;
+      font-size: 28px;
+    }
+    .input-placeholder {
+      color: #ccc;
+    }
+    .camera-icon {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}
+/*base code*/
+.animated {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.animated.hinge {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+/*the animation definition*/
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    -ms-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}

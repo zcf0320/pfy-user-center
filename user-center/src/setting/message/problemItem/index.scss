@@ -1,0 +1,61 @@
+.problem-item {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 16px;
+    &.no-margin {
+        margin-top: 0;
+    }
+    .problem-index {
+        width: 44px;
+        height: 36px;
+        background: url("#{$ossHost}q_1.png") no-repeat;
+        background-size: 100% 100%;
+        margin-top: 28px;
+        &.q-2 {
+            background: url("#{$ossHost}q-2.png") no-repeat;
+            background-size: 100% 100%;
+        }
+        &.q-3 {
+            background: url("#{$ossHost}q-3.png") no-repeat;
+            background-size: 100% 100%;
+        }
+        &.q-4 {
+            background: url("#{$ossHost}q-4.png") no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+    .problem-name {
+        width: 554px;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+        &.no-border {
+            border: none;
+        }
+        .problem-name-top {
+            height: 92px;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 28px;
+            color: $color-333;
+            .next {
+                width: 34px;
+                height: 34px;
+                background: url("#{$ossHost}/next.png") no-repeat;
+                background-size: 100% 100%;
+                transition-duration: 0.5s;
+                transform: rotate(90deg);
+                &.show {
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+        .text {
+            color: $color-999;
+            line-height: 34px;
+            font-size: 24px;
+            margin-bottom: 32px;
+            font-weight: normal;
+        }
+    }
+}

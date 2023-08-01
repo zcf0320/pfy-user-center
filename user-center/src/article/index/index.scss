@@ -1,0 +1,188 @@
+.page-article-list {
+  width: 100%;
+  height: 100%;
+  background: #f6f6f6;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 96px;
+  position: relative;
+  .scroll-page {
+    transition: all 0.3s ease-out;
+    background-color: #ffffff;
+    // position: absolute;
+    // top: 0;
+  }
+  .tags {
+    transition: all 0.6s ease-in;
+    width: 100%;
+    background: $white;
+    padding: 32px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    .tag-item {
+      // width: 112px;
+      padding: 5px;
+      height: 40px;
+      border-radius: 8px;
+      border: 1px solid #cccccc;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: $color-666;
+      margin-right: 32px;
+      // margin-top: 24px;
+      margin-bottom: 24px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      // &:nth-child(1) {
+      //   margin-top: 0;
+      // }
+      // &:nth-child(2) {
+      //   margin-top: 0;
+      // }
+      // &:nth-child(3) {
+      //   margin-top: 0;
+      // }
+      // &:nth-child(4) {
+      //   margin-top: 0;
+      // }
+      // &:nth-child(5) {
+      //   margin-top: 0;
+      // }
+      // &:nth-child(5n) {
+      //   margin-right: 0;
+      // }
+      // &:nth-child(5n-2) {
+      //   margin-right: 30px;
+      // }
+      &.active {
+        color: #ff775d;
+        border: 1px solid #ff775d;
+      }
+    }
+  }
+  .mask {
+    width: 32px;
+    height: 96px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, #ffffff 100%);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+  }
+  .page-title {
+    width: 100%;
+    overflow-x: scroll;
+    height: 96px;
+    position: fixed;
+    left: 0;
+    /* #ifdef h5 */
+    top: 88px;
+    /* #endif */
+    /* #ifndef h5 */
+    top: 0;
+    /* #endif */
+    padding-right: 32px;
+    background: $white;
+    box-shadow: 0px 4px 8px 0px rgba(68, 96, 225, 0.1);
+    z-index: 9;
+    .tab-list {
+      width: 960px;
+      height: 100%;
+    }
+
+    .tab-item {
+      // width: 192px;
+      padding: 0 10px;
+      height: 96px;
+      position: relative;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 32px;
+      color: $color-999;
+      float: left;
+      &.active {
+        color: $color-333;
+        font-weight: bold;
+      }
+      .line {
+        width: 44px;
+        height: 8px;
+        background: linear-gradient(90deg, #ef7064 0%, #db4d40 100%);
+        border-radius: 4px;
+        position: absolute;
+        left: 74px;
+        bottom: 12px;
+      }
+    }
+    .title-content {
+      width: 100%;
+      height: 98px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 10;
+      padding: 0 110px;
+      box-sizing: border-box;
+      font-size: 32px;
+      color: rgba(255, 255, 255, 0.8);
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .active {
+        color: $white;
+        font-weight: bold;
+      }
+      .line {
+        width: 84px;
+        height: 4px;
+        background: $white;
+        border-radius: 2px;
+        position: absolute;
+        left: 116px;
+        bottom: 18px;
+        &.active {
+          left: 320px;
+        }
+        &.active1 {
+          left: 538px;
+        }
+      }
+    }
+  }
+  .article-list {
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-bottom: 32px;
+  }
+  .empty {
+    width: 718px;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: $white;
+    border-radius: 12px;
+  }
+  .load-text {
+    font-size: 24px;
+    color: $color-999;
+    margin: 24px 0;
+  }
+  .goTop {
+    width: 88px;
+    height: 88px;
+    background: url("#{$ossHost}/goTop.png");
+    background-size: 100%;
+    position: fixed;
+    bottom: 150px;
+    right: 32px;
+    z-index: 9;
+    &.weapp {
+      bottom: 118px;
+    }
+  }
+}
